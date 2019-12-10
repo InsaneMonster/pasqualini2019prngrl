@@ -1,0 +1,1086 @@
+2019-11-03 15:59:52,651 - INFO - Data:
+
+Proximal Policy Optimization with GAE buffer and early stopping
+Three dense layer with 4096 neurons each using xavier initialization
+Learning rate policy: 0.0003
+Learning rate advantage: 0.001
+Discount factor: 0.99
+Value steps per update: 80
+Policy steps per update: 80
+Lambda parameter: 0.97
+Clip ratio: 0.2
+Target KL divergence: 0.01
+Updates per training volley: 10
+Success threshold: 0.9 average total reward on the validation set episodes
+Episodic: yes
+Episode length: 100
+Max allowed steps for episode: 100
+Seed states range [0, 0]
+Acceptance value: none
+Threshold value: none
+
+2019-11-03 15:59:52,652 - INFO - Setup of experiment experiment_7...
+2019-11-03 15:59:52,652 - INFO - Environment setup...
+2019-11-03 15:59:52,652 - INFO - Environment setup is successful!
+2019-11-03 15:59:52,652 - INFO - Agent setup...
+2019-11-03 15:59:52,652 - INFO - Setup of agent ppo_agent with scope experiment_7...
+2019-11-03 15:59:52,654 - INFO - A Tensorboard summary for the agent will be updated during training of its internal model
+2019-11-03 15:59:52,654 - INFO - Tensorboard summary path: ./experiments/rng_discrete_binary_ppo_e_s10_r127-128_2019-10-27/experiment/7/summary
+2019-11-03 15:59:52,654 - INFO - Generating model model with scope experiment_7/ppo_agent...
+2019-11-03 15:59:52,654 - INFO - Model generation successful
+2019-11-03 15:59:53,198 - INFO - Agent setup is successful!
+2019-11-03 15:59:53,214 - INFO - Agent internal model will be saved after each train volley
+2019-11-03 15:59:53,215 - INFO - Agent internal model metagraph save path: ./experiments/rng_discrete_binary_ppo_e_s10_r127-128_2019-10-27/experiment/7/metagraph
+2019-11-03 15:59:53,215 - INFO - Tensorflow configuration is successful!
+2019-11-03 15:59:53,215 - INFO - Experiment setup is successful. Now can conduct the experiment
+2019-11-03 15:59:53,215 - INFO - Conducting experiment experiment_7...
+2019-11-03 15:59:55,726 - INFO - Model initialized to default state
+2019-11-03 15:59:55,726 - INFO - Training for 1000 episodes...
+2019-11-03 16:07:22,898 - INFO - Training of 1000 finished with following result:
+2019-11-03 16:07:22,898 - INFO - Average total reward over 1000 training episodes after 1000 total training episodes: 0.303
+2019-11-03 16:07:22,898 - INFO - Average scaled reward over 1000 training episodes after 1000 total training episodes: 0.004
+2019-11-03 16:07:22,899 - INFO - Total environmental steps in training mode up to now: 80000
+2019-11-03 16:07:22,899 - INFO - Saving the agent...
+2019-11-03 16:07:23,342 - INFO - Validating for 1000 episodes...
+2019-11-03 16:13:16,850 - INFO - Training of 1000 finished with following result:
+2019-11-03 16:13:16,850 - INFO - Average total reward over 1000 validation episodes after 1000 total training episodes: 0.297
+2019-11-03 16:13:16,850 - INFO - Average scaled reward over 1000 validation episodes after 1000 total training episodes: 0.004
+2019-11-03 16:13:16,850 - INFO - Training for 1000 episodes...
+2019-11-03 16:20:49,130 - INFO - Training of 1000 finished with following result:
+2019-11-03 16:20:49,131 - INFO - Average total reward over 1000 training episodes after 2000 total training episodes: 0.3
+2019-11-03 16:20:49,131 - INFO - Average scaled reward over 1000 training episodes after 2000 total training episodes: 0.004
+2019-11-03 16:20:49,131 - INFO - Total environmental steps in training mode up to now: 160000
+2019-11-03 16:20:49,131 - INFO - Saving the agent...
+2019-11-03 16:21:03,314 - INFO - Validating for 1000 episodes...
+2019-11-03 16:26:55,253 - INFO - Training of 1000 finished with following result:
+2019-11-03 16:26:55,253 - INFO - Average total reward over 1000 validation episodes after 2000 total training episodes: 0.292
+2019-11-03 16:26:55,253 - INFO - Average scaled reward over 1000 validation episodes after 2000 total training episodes: 0.004
+2019-11-03 16:26:55,253 - INFO - Training for 1000 episodes...
+2019-11-03 16:34:27,294 - INFO - Training of 1000 finished with following result:
+2019-11-03 16:34:27,295 - INFO - Average total reward over 1000 training episodes after 3000 total training episodes: 0.273
+2019-11-03 16:34:27,295 - INFO - Average scaled reward over 1000 training episodes after 3000 total training episodes: 0.003
+2019-11-03 16:34:27,295 - INFO - Total environmental steps in training mode up to now: 240000
+2019-11-03 16:34:27,295 - INFO - Saving the agent...
+2019-11-03 16:34:47,660 - INFO - Validating for 1000 episodes...
+2019-11-03 16:40:42,585 - INFO - Training of 1000 finished with following result:
+2019-11-03 16:40:42,585 - INFO - Average total reward over 1000 validation episodes after 3000 total training episodes: 0.264
+2019-11-03 16:40:42,585 - INFO - Average scaled reward over 1000 validation episodes after 3000 total training episodes: 0.003
+2019-11-03 16:40:42,585 - INFO - Training for 1000 episodes...
+2019-11-03 16:48:19,346 - INFO - Training of 1000 finished with following result:
+2019-11-03 16:48:19,347 - INFO - Average total reward over 1000 training episodes after 4000 total training episodes: 0.253
+2019-11-03 16:48:19,347 - INFO - Average scaled reward over 1000 training episodes after 4000 total training episodes: 0.003
+2019-11-03 16:48:19,347 - INFO - Total environmental steps in training mode up to now: 320000
+2019-11-03 16:48:19,347 - INFO - Saving the agent...
+2019-11-03 16:48:32,143 - INFO - Validating for 1000 episodes...
+2019-11-03 16:54:32,506 - INFO - Training of 1000 finished with following result:
+2019-11-03 16:54:32,506 - INFO - Average total reward over 1000 validation episodes after 4000 total training episodes: 0.243
+2019-11-03 16:54:32,506 - INFO - Average scaled reward over 1000 validation episodes after 4000 total training episodes: 0.003
+2019-11-03 16:54:32,507 - INFO - Training for 1000 episodes...
+2019-11-03 17:03:47,796 - INFO - Training of 1000 finished with following result:
+2019-11-03 17:03:47,796 - INFO - Average total reward over 1000 training episodes after 5000 total training episodes: 0.228
+2019-11-03 17:03:47,796 - INFO - Average scaled reward over 1000 training episodes after 5000 total training episodes: 0.003
+2019-11-03 17:03:47,796 - INFO - Total environmental steps in training mode up to now: 400000
+2019-11-03 17:03:47,796 - INFO - Saving the agent...
+2019-11-03 17:04:09,065 - INFO - Validating for 1000 episodes...
+2019-11-03 17:12:27,661 - INFO - Training of 1000 finished with following result:
+2019-11-03 17:12:27,662 - INFO - Average total reward over 1000 validation episodes after 5000 total training episodes: 0.226
+2019-11-03 17:12:27,662 - INFO - Average scaled reward over 1000 validation episodes after 5000 total training episodes: 0.003
+2019-11-03 17:12:27,662 - INFO - Training for 1000 episodes...
+2019-11-03 17:22:47,192 - INFO - Training of 1000 finished with following result:
+2019-11-03 17:22:47,192 - INFO - Average total reward over 1000 training episodes after 6000 total training episodes: 0.218
+2019-11-03 17:22:47,192 - INFO - Average scaled reward over 1000 training episodes after 6000 total training episodes: 0.003
+2019-11-03 17:22:47,192 - INFO - Total environmental steps in training mode up to now: 480000
+2019-11-03 17:22:47,192 - INFO - Saving the agent...
+2019-11-03 17:22:49,071 - INFO - Validating for 1000 episodes...
+2019-11-03 17:31:03,774 - INFO - Training of 1000 finished with following result:
+2019-11-03 17:31:03,774 - INFO - Average total reward over 1000 validation episodes after 6000 total training episodes: 0.221
+2019-11-03 17:31:03,774 - INFO - Average scaled reward over 1000 validation episodes after 6000 total training episodes: 0.003
+2019-11-03 17:31:03,774 - INFO - Training for 1000 episodes...
+2019-11-03 17:42:15,352 - INFO - Training of 1000 finished with following result:
+2019-11-03 17:42:15,353 - INFO - Average total reward over 1000 training episodes after 7000 total training episodes: 0.224
+2019-11-03 17:42:15,353 - INFO - Average scaled reward over 1000 training episodes after 7000 total training episodes: 0.003
+2019-11-03 17:42:15,353 - INFO - Total environmental steps in training mode up to now: 560000
+2019-11-03 17:42:15,353 - INFO - Saving the agent...
+2019-11-03 17:42:34,203 - INFO - Validating for 1000 episodes...
+2019-11-03 17:50:51,345 - INFO - Training of 1000 finished with following result:
+2019-11-03 17:50:51,346 - INFO - Average total reward over 1000 validation episodes after 7000 total training episodes: 0.231
+2019-11-03 17:50:51,346 - INFO - Average scaled reward over 1000 validation episodes after 7000 total training episodes: 0.003
+2019-11-03 17:50:51,346 - INFO - Training for 1000 episodes...
+2019-11-03 18:01:53,707 - INFO - Training of 1000 finished with following result:
+2019-11-03 18:01:53,707 - INFO - Average total reward over 1000 training episodes after 8000 total training episodes: 0.215
+2019-11-03 18:01:53,708 - INFO - Average scaled reward over 1000 training episodes after 8000 total training episodes: 0.003
+2019-11-03 18:01:53,708 - INFO - Total environmental steps in training mode up to now: 640000
+2019-11-03 18:01:53,708 - INFO - Saving the agent...
+2019-11-03 18:01:57,571 - INFO - Validating for 1000 episodes...
+2019-11-03 18:10:38,036 - INFO - Training of 1000 finished with following result:
+2019-11-03 18:10:38,036 - INFO - Average total reward over 1000 validation episodes after 8000 total training episodes: 0.226
+2019-11-03 18:10:38,036 - INFO - Average scaled reward over 1000 validation episodes after 8000 total training episodes: 0.003
+2019-11-03 18:10:38,036 - INFO - Training for 1000 episodes...
+2019-11-03 18:21:59,676 - INFO - Training of 1000 finished with following result:
+2019-11-03 18:21:59,677 - INFO - Average total reward over 1000 training episodes after 9000 total training episodes: 0.232
+2019-11-03 18:21:59,677 - INFO - Average scaled reward over 1000 training episodes after 9000 total training episodes: 0.003
+2019-11-03 18:21:59,677 - INFO - Total environmental steps in training mode up to now: 720000
+2019-11-03 18:21:59,677 - INFO - Saving the agent...
+2019-11-03 18:22:04,030 - INFO - Validating for 1000 episodes...
+2019-11-03 18:31:06,623 - INFO - Training of 1000 finished with following result:
+2019-11-03 18:31:06,623 - INFO - Average total reward over 1000 validation episodes after 9000 total training episodes: 0.229
+2019-11-03 18:31:06,623 - INFO - Average scaled reward over 1000 validation episodes after 9000 total training episodes: 0.003
+2019-11-03 18:31:06,623 - INFO - Training for 1000 episodes...
+2019-11-03 18:42:54,290 - INFO - Training of 1000 finished with following result:
+2019-11-03 18:42:54,291 - INFO - Average total reward over 1000 training episodes after 10000 total training episodes: 0.23
+2019-11-03 18:42:54,291 - INFO - Average scaled reward over 1000 training episodes after 10000 total training episodes: 0.003
+2019-11-03 18:42:54,291 - INFO - Total environmental steps in training mode up to now: 800000
+2019-11-03 18:42:54,291 - INFO - Saving the agent...
+2019-11-03 18:42:58,593 - INFO - Validating for 1000 episodes...
+2019-11-03 18:51:41,726 - INFO - Training of 1000 finished with following result:
+2019-11-03 18:51:41,727 - INFO - Average total reward over 1000 validation episodes after 10000 total training episodes: 0.232
+2019-11-03 18:51:41,727 - INFO - Average scaled reward over 1000 validation episodes after 10000 total training episodes: 0.003
+2019-11-03 18:51:41,727 - INFO - Training for 1000 episodes...
+2019-11-03 19:03:30,015 - INFO - Training of 1000 finished with following result:
+2019-11-03 19:03:30,016 - INFO - Average total reward over 1000 training episodes after 11000 total training episodes: 0.231
+2019-11-03 19:03:30,016 - INFO - Average scaled reward over 1000 training episodes after 11000 total training episodes: 0.003
+2019-11-03 19:03:30,016 - INFO - Total environmental steps in training mode up to now: 880000
+2019-11-03 19:03:30,016 - INFO - Saving the agent...
+2019-11-03 19:03:33,440 - INFO - Validating for 1000 episodes...
+2019-11-03 19:12:32,908 - INFO - Training of 1000 finished with following result:
+2019-11-03 19:12:32,909 - INFO - Average total reward over 1000 validation episodes after 11000 total training episodes: 0.23
+2019-11-03 19:12:32,909 - INFO - Average scaled reward over 1000 validation episodes after 11000 total training episodes: 0.003
+2019-11-03 19:12:32,909 - INFO - Training for 1000 episodes...
+2019-11-03 19:23:53,117 - INFO - Training of 1000 finished with following result:
+2019-11-03 19:23:53,117 - INFO - Average total reward over 1000 training episodes after 12000 total training episodes: 0.228
+2019-11-03 19:23:53,118 - INFO - Average scaled reward over 1000 training episodes after 12000 total training episodes: 0.003
+2019-11-03 19:23:53,118 - INFO - Total environmental steps in training mode up to now: 960000
+2019-11-03 19:23:53,118 - INFO - Saving the agent...
+2019-11-03 19:23:56,621 - INFO - Validating for 1000 episodes...
+2019-11-03 19:33:09,598 - INFO - Training of 1000 finished with following result:
+2019-11-03 19:33:09,598 - INFO - Average total reward over 1000 validation episodes after 12000 total training episodes: 0.228
+2019-11-03 19:33:09,599 - INFO - Average scaled reward over 1000 validation episodes after 12000 total training episodes: 0.003
+2019-11-03 19:33:09,599 - INFO - Training for 1000 episodes...
+2019-11-03 19:45:13,068 - INFO - Training of 1000 finished with following result:
+2019-11-03 19:45:13,068 - INFO - Average total reward over 1000 training episodes after 13000 total training episodes: 0.239
+2019-11-03 19:45:13,068 - INFO - Average scaled reward over 1000 training episodes after 13000 total training episodes: 0.003
+2019-11-03 19:45:13,068 - INFO - Total environmental steps in training mode up to now: 1040000
+2019-11-03 19:45:13,068 - INFO - Saving the agent...
+2019-11-03 19:45:16,119 - INFO - Validating for 1000 episodes...
+2019-11-03 19:54:30,852 - INFO - Training of 1000 finished with following result:
+2019-11-03 19:54:30,853 - INFO - Average total reward over 1000 validation episodes after 13000 total training episodes: 0.226
+2019-11-03 19:54:30,853 - INFO - Average scaled reward over 1000 validation episodes after 13000 total training episodes: 0.003
+2019-11-03 19:54:30,853 - INFO - Training for 1000 episodes...
+2019-11-03 20:06:22,639 - INFO - Training of 1000 finished with following result:
+2019-11-03 20:06:22,640 - INFO - Average total reward over 1000 training episodes after 14000 total training episodes: 0.232
+2019-11-03 20:06:22,640 - INFO - Average scaled reward over 1000 training episodes after 14000 total training episodes: 0.003
+2019-11-03 20:06:22,640 - INFO - Total environmental steps in training mode up to now: 1120000
+2019-11-03 20:06:22,640 - INFO - Saving the agent...
+2019-11-03 20:06:25,638 - INFO - Validating for 1000 episodes...
+2019-11-03 20:12:35,166 - INFO - Training of 1000 finished with following result:
+2019-11-03 20:12:35,166 - INFO - Average total reward over 1000 validation episodes after 14000 total training episodes: 0.224
+2019-11-03 20:12:35,166 - INFO - Average scaled reward over 1000 validation episodes after 14000 total training episodes: 0.003
+2019-11-03 20:12:35,166 - INFO - Training for 1000 episodes...
+2019-11-03 20:20:19,706 - INFO - Training of 1000 finished with following result:
+2019-11-03 20:20:19,706 - INFO - Average total reward over 1000 training episodes after 15000 total training episodes: 0.232
+2019-11-03 20:20:19,706 - INFO - Average scaled reward over 1000 training episodes after 15000 total training episodes: 0.003
+2019-11-03 20:20:19,706 - INFO - Total environmental steps in training mode up to now: 1200000
+2019-11-03 20:20:19,706 - INFO - Saving the agent...
+2019-11-03 20:20:25,217 - INFO - Validating for 1000 episodes...
+2019-11-03 20:26:29,086 - INFO - Training of 1000 finished with following result:
+2019-11-03 20:26:29,087 - INFO - Average total reward over 1000 validation episodes after 15000 total training episodes: 0.234
+2019-11-03 20:26:29,087 - INFO - Average scaled reward over 1000 validation episodes after 15000 total training episodes: 0.003
+2019-11-03 20:26:29,087 - INFO - Training for 1000 episodes...
+2019-11-03 20:34:10,247 - INFO - Training of 1000 finished with following result:
+2019-11-03 20:34:10,248 - INFO - Average total reward over 1000 training episodes after 16000 total training episodes: 0.243
+2019-11-03 20:34:10,248 - INFO - Average scaled reward over 1000 training episodes after 16000 total training episodes: 0.003
+2019-11-03 20:34:10,248 - INFO - Total environmental steps in training mode up to now: 1280000
+2019-11-03 20:34:10,248 - INFO - Saving the agent...
+2019-11-03 20:34:11,862 - INFO - Validating for 1000 episodes...
+2019-11-03 20:40:18,408 - INFO - Training of 1000 finished with following result:
+2019-11-03 20:40:18,408 - INFO - Average total reward over 1000 validation episodes after 16000 total training episodes: 0.248
+2019-11-03 20:40:18,408 - INFO - Average scaled reward over 1000 validation episodes after 16000 total training episodes: 0.003
+2019-11-03 20:40:18,408 - INFO - Training for 1000 episodes...
+2019-11-03 20:48:01,981 - INFO - Training of 1000 finished with following result:
+2019-11-03 20:48:01,982 - INFO - Average total reward over 1000 training episodes after 17000 total training episodes: 0.237
+2019-11-03 20:48:01,982 - INFO - Average scaled reward over 1000 training episodes after 17000 total training episodes: 0.003
+2019-11-03 20:48:01,982 - INFO - Total environmental steps in training mode up to now: 1360000
+2019-11-03 20:48:01,982 - INFO - Saving the agent...
+2019-11-03 20:48:03,831 - INFO - Validating for 1000 episodes...
+2019-11-03 20:54:07,096 - INFO - Training of 1000 finished with following result:
+2019-11-03 20:54:07,096 - INFO - Average total reward over 1000 validation episodes after 17000 total training episodes: 0.225
+2019-11-03 20:54:07,096 - INFO - Average scaled reward over 1000 validation episodes after 17000 total training episodes: 0.003
+2019-11-03 20:54:07,097 - INFO - Training for 1000 episodes...
+2019-11-03 21:01:52,010 - INFO - Training of 1000 finished with following result:
+2019-11-03 21:01:52,011 - INFO - Average total reward over 1000 training episodes after 18000 total training episodes: 0.232
+2019-11-03 21:01:52,011 - INFO - Average scaled reward over 1000 training episodes after 18000 total training episodes: 0.003
+2019-11-03 21:01:52,011 - INFO - Total environmental steps in training mode up to now: 1440000
+2019-11-03 21:01:52,011 - INFO - Saving the agent...
+2019-11-03 21:01:53,566 - INFO - Validating for 1000 episodes...
+2019-11-03 21:07:57,999 - INFO - Training of 1000 finished with following result:
+2019-11-03 21:07:57,999 - INFO - Average total reward over 1000 validation episodes after 18000 total training episodes: 0.228
+2019-11-03 21:07:57,999 - INFO - Average scaled reward over 1000 validation episodes after 18000 total training episodes: 0.003
+2019-11-03 21:07:57,999 - INFO - Training for 1000 episodes...
+2019-11-03 21:15:45,463 - INFO - Training of 1000 finished with following result:
+2019-11-03 21:15:45,463 - INFO - Average total reward over 1000 training episodes after 19000 total training episodes: 0.245
+2019-11-03 21:15:45,463 - INFO - Average scaled reward over 1000 training episodes after 19000 total training episodes: 0.003
+2019-11-03 21:15:45,463 - INFO - Total environmental steps in training mode up to now: 1520000
+2019-11-03 21:15:45,463 - INFO - Saving the agent...
+2019-11-03 21:15:47,274 - INFO - Validating for 1000 episodes...
+2019-11-03 21:21:49,607 - INFO - Training of 1000 finished with following result:
+2019-11-03 21:21:49,608 - INFO - Average total reward over 1000 validation episodes after 19000 total training episodes: 0.227
+2019-11-03 21:21:49,608 - INFO - Average scaled reward over 1000 validation episodes after 19000 total training episodes: 0.003
+2019-11-03 21:21:49,608 - INFO - Training for 1000 episodes...
+2019-11-03 21:29:25,989 - INFO - Training of 1000 finished with following result:
+2019-11-03 21:29:25,989 - INFO - Average total reward over 1000 training episodes after 20000 total training episodes: 0.236
+2019-11-03 21:29:25,990 - INFO - Average scaled reward over 1000 training episodes after 20000 total training episodes: 0.003
+2019-11-03 21:29:25,990 - INFO - Total environmental steps in training mode up to now: 1600000
+2019-11-03 21:29:25,990 - INFO - Saving the agent...
+2019-11-03 21:29:28,407 - INFO - Validating for 1000 episodes...
+2019-11-03 21:35:24,599 - INFO - Training of 1000 finished with following result:
+2019-11-03 21:35:24,600 - INFO - Average total reward over 1000 validation episodes after 20000 total training episodes: 0.241
+2019-11-03 21:35:24,600 - INFO - Average scaled reward over 1000 validation episodes after 20000 total training episodes: 0.003
+2019-11-03 21:35:24,600 - INFO - Training for 1000 episodes...
+2019-11-03 21:43:03,769 - INFO - Training of 1000 finished with following result:
+2019-11-03 21:43:03,770 - INFO - Average total reward over 1000 training episodes after 21000 total training episodes: 0.236
+2019-11-03 21:43:03,770 - INFO - Average scaled reward over 1000 training episodes after 21000 total training episodes: 0.003
+2019-11-03 21:43:03,770 - INFO - Total environmental steps in training mode up to now: 1680000
+2019-11-03 21:43:03,770 - INFO - Saving the agent...
+2019-11-03 21:43:09,578 - INFO - Validating for 1000 episodes...
+2019-11-03 21:49:06,451 - INFO - Training of 1000 finished with following result:
+2019-11-03 21:49:06,451 - INFO - Average total reward over 1000 validation episodes after 21000 total training episodes: 0.237
+2019-11-03 21:49:06,451 - INFO - Average scaled reward over 1000 validation episodes after 21000 total training episodes: 0.003
+2019-11-03 21:49:06,451 - INFO - Training for 1000 episodes...
+2019-11-03 21:56:46,035 - INFO - Training of 1000 finished with following result:
+2019-11-03 21:56:46,036 - INFO - Average total reward over 1000 training episodes after 22000 total training episodes: 0.232
+2019-11-03 21:56:46,036 - INFO - Average scaled reward over 1000 training episodes after 22000 total training episodes: 0.003
+2019-11-03 21:56:46,036 - INFO - Total environmental steps in training mode up to now: 1760000
+2019-11-03 21:56:46,036 - INFO - Saving the agent...
+2019-11-03 21:56:59,488 - INFO - Validating for 1000 episodes...
+2019-11-03 22:02:55,588 - INFO - Training of 1000 finished with following result:
+2019-11-03 22:02:55,589 - INFO - Average total reward over 1000 validation episodes after 22000 total training episodes: 0.233
+2019-11-03 22:02:55,589 - INFO - Average scaled reward over 1000 validation episodes after 22000 total training episodes: 0.003
+2019-11-03 22:02:55,589 - INFO - Training for 1000 episodes...
+2019-11-03 22:10:32,191 - INFO - Training of 1000 finished with following result:
+2019-11-03 22:10:32,191 - INFO - Average total reward over 1000 training episodes after 23000 total training episodes: 0.231
+2019-11-03 22:10:32,191 - INFO - Average scaled reward over 1000 training episodes after 23000 total training episodes: 0.003
+2019-11-03 22:10:32,191 - INFO - Total environmental steps in training mode up to now: 1840000
+2019-11-03 22:10:32,191 - INFO - Saving the agent...
+2019-11-03 22:10:55,398 - INFO - Validating for 1000 episodes...
+2019-11-03 22:16:45,638 - INFO - Training of 1000 finished with following result:
+2019-11-03 22:16:45,639 - INFO - Average total reward over 1000 validation episodes after 23000 total training episodes: 0.226
+2019-11-03 22:16:45,639 - INFO - Average scaled reward over 1000 validation episodes after 23000 total training episodes: 0.003
+2019-11-03 22:16:45,639 - INFO - Training for 1000 episodes...
+2019-11-03 22:24:17,842 - INFO - Training of 1000 finished with following result:
+2019-11-03 22:24:17,843 - INFO - Average total reward over 1000 training episodes after 24000 total training episodes: 0.226
+2019-11-03 22:24:17,843 - INFO - Average scaled reward over 1000 training episodes after 24000 total training episodes: 0.003
+2019-11-03 22:24:17,843 - INFO - Total environmental steps in training mode up to now: 1920000
+2019-11-03 22:24:17,843 - INFO - Saving the agent...
+2019-11-03 22:24:31,473 - INFO - Validating for 1000 episodes...
+2019-11-03 22:30:34,338 - INFO - Training of 1000 finished with following result:
+2019-11-03 22:30:34,338 - INFO - Average total reward over 1000 validation episodes after 24000 total training episodes: 0.231
+2019-11-03 22:30:34,338 - INFO - Average scaled reward over 1000 validation episodes after 24000 total training episodes: 0.003
+2019-11-03 22:30:34,338 - INFO - Training for 1000 episodes...
+2019-11-03 22:38:26,088 - INFO - Training of 1000 finished with following result:
+2019-11-03 22:38:26,088 - INFO - Average total reward over 1000 training episodes after 25000 total training episodes: 0.239
+2019-11-03 22:38:26,088 - INFO - Average scaled reward over 1000 training episodes after 25000 total training episodes: 0.003
+2019-11-03 22:38:26,088 - INFO - Total environmental steps in training mode up to now: 2000000
+2019-11-03 22:38:26,089 - INFO - Saving the agent...
+2019-11-03 22:38:28,146 - INFO - Validating for 1000 episodes...
+2019-11-03 22:44:37,069 - INFO - Training of 1000 finished with following result:
+2019-11-03 22:44:37,070 - INFO - Average total reward over 1000 validation episodes after 25000 total training episodes: 0.238
+2019-11-03 22:44:37,070 - INFO - Average scaled reward over 1000 validation episodes after 25000 total training episodes: 0.003
+2019-11-03 22:44:37,070 - INFO - Training for 1000 episodes...
+2019-11-03 22:52:24,778 - INFO - Training of 1000 finished with following result:
+2019-11-03 22:52:24,779 - INFO - Average total reward over 1000 training episodes after 26000 total training episodes: 0.234
+2019-11-03 22:52:24,779 - INFO - Average scaled reward over 1000 training episodes after 26000 total training episodes: 0.003
+2019-11-03 22:52:24,779 - INFO - Total environmental steps in training mode up to now: 2080000
+2019-11-03 22:52:24,779 - INFO - Saving the agent...
+2019-11-03 22:52:26,255 - INFO - Validating for 1000 episodes...
+2019-11-03 22:58:29,687 - INFO - Training of 1000 finished with following result:
+2019-11-03 22:58:29,688 - INFO - Average total reward over 1000 validation episodes after 26000 total training episodes: 0.228
+2019-11-03 22:58:29,688 - INFO - Average scaled reward over 1000 validation episodes after 26000 total training episodes: 0.003
+2019-11-03 22:58:29,688 - INFO - Training for 1000 episodes...
+2019-11-03 23:06:15,512 - INFO - Training of 1000 finished with following result:
+2019-11-03 23:06:15,512 - INFO - Average total reward over 1000 training episodes after 27000 total training episodes: 0.229
+2019-11-03 23:06:15,512 - INFO - Average scaled reward over 1000 training episodes after 27000 total training episodes: 0.003
+2019-11-03 23:06:15,512 - INFO - Total environmental steps in training mode up to now: 2160000
+2019-11-03 23:06:15,512 - INFO - Saving the agent...
+2019-11-03 23:06:17,616 - INFO - Validating for 1000 episodes...
+2019-11-03 23:12:28,097 - INFO - Training of 1000 finished with following result:
+2019-11-03 23:12:28,098 - INFO - Average total reward over 1000 validation episodes after 27000 total training episodes: 0.228
+2019-11-03 23:12:28,098 - INFO - Average scaled reward over 1000 validation episodes after 27000 total training episodes: 0.003
+2019-11-03 23:12:28,098 - INFO - Training for 1000 episodes...
+2019-11-03 23:20:18,095 - INFO - Training of 1000 finished with following result:
+2019-11-03 23:20:18,095 - INFO - Average total reward over 1000 training episodes after 28000 total training episodes: 0.236
+2019-11-03 23:20:18,096 - INFO - Average scaled reward over 1000 training episodes after 28000 total training episodes: 0.003
+2019-11-03 23:20:18,096 - INFO - Total environmental steps in training mode up to now: 2240000
+2019-11-03 23:20:18,096 - INFO - Saving the agent...
+2019-11-03 23:20:19,596 - INFO - Validating for 1000 episodes...
+2019-11-03 23:26:24,131 - INFO - Training of 1000 finished with following result:
+2019-11-03 23:26:24,132 - INFO - Average total reward over 1000 validation episodes after 28000 total training episodes: 0.233
+2019-11-03 23:26:24,132 - INFO - Average scaled reward over 1000 validation episodes after 28000 total training episodes: 0.003
+2019-11-03 23:26:24,132 - INFO - Training for 1000 episodes...
+2019-11-03 23:34:07,046 - INFO - Training of 1000 finished with following result:
+2019-11-03 23:34:07,047 - INFO - Average total reward over 1000 training episodes after 29000 total training episodes: 0.224
+2019-11-03 23:34:07,047 - INFO - Average scaled reward over 1000 training episodes after 29000 total training episodes: 0.003
+2019-11-03 23:34:07,047 - INFO - Total environmental steps in training mode up to now: 2320000
+2019-11-03 23:34:07,047 - INFO - Saving the agent...
+2019-11-03 23:34:13,561 - INFO - Validating for 1000 episodes...
+2019-11-03 23:40:06,968 - INFO - Training of 1000 finished with following result:
+2019-11-03 23:40:06,968 - INFO - Average total reward over 1000 validation episodes after 29000 total training episodes: 0.226
+2019-11-03 23:40:06,968 - INFO - Average scaled reward over 1000 validation episodes after 29000 total training episodes: 0.003
+2019-11-03 23:40:06,969 - INFO - Training for 1000 episodes...
+2019-11-03 23:47:47,339 - INFO - Training of 1000 finished with following result:
+2019-11-03 23:47:47,340 - INFO - Average total reward over 1000 training episodes after 30000 total training episodes: 0.228
+2019-11-03 23:47:47,340 - INFO - Average scaled reward over 1000 training episodes after 30000 total training episodes: 0.003
+2019-11-03 23:47:47,340 - INFO - Total environmental steps in training mode up to now: 2400000
+2019-11-03 23:47:47,340 - INFO - Saving the agent...
+2019-11-03 23:47:50,120 - INFO - Validating for 1000 episodes...
+2019-11-03 23:53:41,455 - INFO - Training of 1000 finished with following result:
+2019-11-03 23:53:41,455 - INFO - Average total reward over 1000 validation episodes after 30000 total training episodes: 0.235
+2019-11-03 23:53:41,455 - INFO - Average scaled reward over 1000 validation episodes after 30000 total training episodes: 0.003
+2019-11-03 23:53:41,455 - INFO - Training for 1000 episodes...
+2019-11-04 00:01:20,715 - INFO - Training of 1000 finished with following result:
+2019-11-04 00:01:20,715 - INFO - Average total reward over 1000 training episodes after 31000 total training episodes: 0.235
+2019-11-04 00:01:20,715 - INFO - Average scaled reward over 1000 training episodes after 31000 total training episodes: 0.003
+2019-11-04 00:01:20,715 - INFO - Total environmental steps in training mode up to now: 2480000
+2019-11-04 00:01:20,715 - INFO - Saving the agent...
+2019-11-04 00:01:25,488 - INFO - Validating for 1000 episodes...
+2019-11-04 00:07:19,933 - INFO - Training of 1000 finished with following result:
+2019-11-04 00:07:19,933 - INFO - Average total reward over 1000 validation episodes after 31000 total training episodes: 0.231
+2019-11-04 00:07:19,933 - INFO - Average scaled reward over 1000 validation episodes after 31000 total training episodes: 0.003
+2019-11-04 00:07:19,934 - INFO - Training for 1000 episodes...
+2019-11-04 00:14:55,544 - INFO - Training of 1000 finished with following result:
+2019-11-04 00:14:55,545 - INFO - Average total reward over 1000 training episodes after 32000 total training episodes: 0.229
+2019-11-04 00:14:55,545 - INFO - Average scaled reward over 1000 training episodes after 32000 total training episodes: 0.003
+2019-11-04 00:14:55,545 - INFO - Total environmental steps in training mode up to now: 2560000
+2019-11-04 00:14:55,545 - INFO - Saving the agent...
+2019-11-04 00:15:00,142 - INFO - Validating for 1000 episodes...
+2019-11-04 00:20:54,835 - INFO - Training of 1000 finished with following result:
+2019-11-04 00:20:54,836 - INFO - Average total reward over 1000 validation episodes after 32000 total training episodes: 0.237
+2019-11-04 00:20:54,836 - INFO - Average scaled reward over 1000 validation episodes after 32000 total training episodes: 0.003
+2019-11-04 00:20:54,836 - INFO - Training for 1000 episodes...
+2019-11-04 00:28:29,925 - INFO - Training of 1000 finished with following result:
+2019-11-04 00:28:29,926 - INFO - Average total reward over 1000 training episodes after 33000 total training episodes: 0.235
+2019-11-04 00:28:29,926 - INFO - Average scaled reward over 1000 training episodes after 33000 total training episodes: 0.003
+2019-11-04 00:28:29,926 - INFO - Total environmental steps in training mode up to now: 2640000
+2019-11-04 00:28:29,926 - INFO - Saving the agent...
+2019-11-04 00:28:34,616 - INFO - Validating for 1000 episodes...
+2019-11-04 00:34:29,997 - INFO - Training of 1000 finished with following result:
+2019-11-04 00:34:29,997 - INFO - Average total reward over 1000 validation episodes after 33000 total training episodes: 0.232
+2019-11-04 00:34:29,997 - INFO - Average scaled reward over 1000 validation episodes after 33000 total training episodes: 0.003
+2019-11-04 00:34:29,997 - INFO - Training for 1000 episodes...
+2019-11-04 00:42:02,215 - INFO - Training of 1000 finished with following result:
+2019-11-04 00:42:02,215 - INFO - Average total reward over 1000 training episodes after 34000 total training episodes: 0.236
+2019-11-04 00:42:02,215 - INFO - Average scaled reward over 1000 training episodes after 34000 total training episodes: 0.003
+2019-11-04 00:42:02,215 - INFO - Total environmental steps in training mode up to now: 2720000
+2019-11-04 00:42:02,215 - INFO - Saving the agent...
+2019-11-04 00:42:15,872 - INFO - Validating for 1000 episodes...
+2019-11-04 00:48:08,696 - INFO - Training of 1000 finished with following result:
+2019-11-04 00:48:08,696 - INFO - Average total reward over 1000 validation episodes after 34000 total training episodes: 0.24
+2019-11-04 00:48:08,696 - INFO - Average scaled reward over 1000 validation episodes after 34000 total training episodes: 0.003
+2019-11-04 00:48:08,696 - INFO - Training for 1000 episodes...
+2019-11-04 00:55:43,218 - INFO - Training of 1000 finished with following result:
+2019-11-04 00:55:43,219 - INFO - Average total reward over 1000 training episodes after 35000 total training episodes: 0.246
+2019-11-04 00:55:43,219 - INFO - Average scaled reward over 1000 training episodes after 35000 total training episodes: 0.003
+2019-11-04 00:55:43,219 - INFO - Total environmental steps in training mode up to now: 2800000
+2019-11-04 00:55:43,219 - INFO - Saving the agent...
+2019-11-04 00:55:47,423 - INFO - Validating for 1000 episodes...
+2019-11-04 01:01:41,987 - INFO - Training of 1000 finished with following result:
+2019-11-04 01:01:41,988 - INFO - Average total reward over 1000 validation episodes after 35000 total training episodes: 0.236
+2019-11-04 01:01:41,988 - INFO - Average scaled reward over 1000 validation episodes after 35000 total training episodes: 0.003
+2019-11-04 01:01:41,988 - INFO - Training for 1000 episodes...
+2019-11-04 01:09:15,503 - INFO - Training of 1000 finished with following result:
+2019-11-04 01:09:15,504 - INFO - Average total reward over 1000 training episodes after 36000 total training episodes: 0.237
+2019-11-04 01:09:15,504 - INFO - Average scaled reward over 1000 training episodes after 36000 total training episodes: 0.003
+2019-11-04 01:09:15,504 - INFO - Total environmental steps in training mode up to now: 2880000
+2019-11-04 01:09:15,504 - INFO - Saving the agent...
+2019-11-04 01:09:19,647 - INFO - Validating for 1000 episodes...
+2019-11-04 01:15:14,732 - INFO - Training of 1000 finished with following result:
+2019-11-04 01:15:14,732 - INFO - Average total reward over 1000 validation episodes after 36000 total training episodes: 0.224
+2019-11-04 01:15:14,732 - INFO - Average scaled reward over 1000 validation episodes after 36000 total training episodes: 0.003
+2019-11-04 01:15:14,732 - INFO - Training for 1000 episodes...
+2019-11-04 01:22:50,777 - INFO - Training of 1000 finished with following result:
+2019-11-04 01:22:50,778 - INFO - Average total reward over 1000 training episodes after 37000 total training episodes: 0.224
+2019-11-04 01:22:50,778 - INFO - Average scaled reward over 1000 training episodes after 37000 total training episodes: 0.003
+2019-11-04 01:22:50,778 - INFO - Total environmental steps in training mode up to now: 2960000
+2019-11-04 01:22:50,778 - INFO - Saving the agent...
+2019-11-04 01:22:55,929 - INFO - Validating for 1000 episodes...
+2019-11-04 01:28:50,617 - INFO - Training of 1000 finished with following result:
+2019-11-04 01:28:50,617 - INFO - Average total reward over 1000 validation episodes after 37000 total training episodes: 0.243
+2019-11-04 01:28:50,617 - INFO - Average scaled reward over 1000 validation episodes after 37000 total training episodes: 0.003
+2019-11-04 01:28:50,617 - INFO - Training for 1000 episodes...
+2019-11-04 01:36:28,939 - INFO - Training of 1000 finished with following result:
+2019-11-04 01:36:28,939 - INFO - Average total reward over 1000 training episodes after 38000 total training episodes: 0.239
+2019-11-04 01:36:28,939 - INFO - Average scaled reward over 1000 training episodes after 38000 total training episodes: 0.003
+2019-11-04 01:36:28,939 - INFO - Total environmental steps in training mode up to now: 3040000
+2019-11-04 01:36:28,939 - INFO - Saving the agent...
+2019-11-04 01:36:50,257 - INFO - Validating for 1000 episodes...
+2019-11-04 01:42:44,188 - INFO - Training of 1000 finished with following result:
+2019-11-04 01:42:44,189 - INFO - Average total reward over 1000 validation episodes after 38000 total training episodes: 0.236
+2019-11-04 01:42:44,189 - INFO - Average scaled reward over 1000 validation episodes after 38000 total training episodes: 0.003
+2019-11-04 01:42:44,189 - INFO - Training for 1000 episodes...
+2019-11-04 01:50:23,699 - INFO - Training of 1000 finished with following result:
+2019-11-04 01:50:23,700 - INFO - Average total reward over 1000 training episodes after 39000 total training episodes: 0.25
+2019-11-04 01:50:23,700 - INFO - Average scaled reward over 1000 training episodes after 39000 total training episodes: 0.003
+2019-11-04 01:50:23,700 - INFO - Total environmental steps in training mode up to now: 3120000
+2019-11-04 01:50:23,700 - INFO - Saving the agent...
+2019-11-04 01:50:29,680 - INFO - Validating for 1000 episodes...
+2019-11-04 01:56:25,036 - INFO - Training of 1000 finished with following result:
+2019-11-04 01:56:25,036 - INFO - Average total reward over 1000 validation episodes after 39000 total training episodes: 0.242
+2019-11-04 01:56:25,036 - INFO - Average scaled reward over 1000 validation episodes after 39000 total training episodes: 0.003
+2019-11-04 01:56:25,036 - INFO - Training for 1000 episodes...
+2019-11-04 02:04:05,170 - INFO - Training of 1000 finished with following result:
+2019-11-04 02:04:05,170 - INFO - Average total reward over 1000 training episodes after 40000 total training episodes: 0.248
+2019-11-04 02:04:05,170 - INFO - Average scaled reward over 1000 training episodes after 40000 total training episodes: 0.003
+2019-11-04 02:04:05,170 - INFO - Total environmental steps in training mode up to now: 3200000
+2019-11-04 02:04:05,171 - INFO - Saving the agent...
+2019-11-04 02:04:08,591 - INFO - Validating for 1000 episodes...
+2019-11-04 02:10:01,264 - INFO - Training of 1000 finished with following result:
+2019-11-04 02:10:01,264 - INFO - Average total reward over 1000 validation episodes after 40000 total training episodes: 0.245
+2019-11-04 02:10:01,264 - INFO - Average scaled reward over 1000 validation episodes after 40000 total training episodes: 0.003
+2019-11-04 02:10:01,264 - INFO - Training for 1000 episodes...
+2019-11-04 02:17:42,911 - INFO - Training of 1000 finished with following result:
+2019-11-04 02:17:42,911 - INFO - Average total reward over 1000 training episodes after 41000 total training episodes: 0.254
+2019-11-04 02:17:42,911 - INFO - Average scaled reward over 1000 training episodes after 41000 total training episodes: 0.003
+2019-11-04 02:17:42,911 - INFO - Total environmental steps in training mode up to now: 3280000
+2019-11-04 02:17:42,911 - INFO - Saving the agent...
+2019-11-04 02:17:48,424 - INFO - Validating for 1000 episodes...
+2019-11-04 02:23:42,724 - INFO - Training of 1000 finished with following result:
+2019-11-04 02:23:42,725 - INFO - Average total reward over 1000 validation episodes after 41000 total training episodes: 0.249
+2019-11-04 02:23:42,725 - INFO - Average scaled reward over 1000 validation episodes after 41000 total training episodes: 0.003
+2019-11-04 02:23:42,725 - INFO - Training for 1000 episodes...
+2019-11-04 02:31:18,507 - INFO - Training of 1000 finished with following result:
+2019-11-04 02:31:18,507 - INFO - Average total reward over 1000 training episodes after 42000 total training episodes: 0.241
+2019-11-04 02:31:18,507 - INFO - Average scaled reward over 1000 training episodes after 42000 total training episodes: 0.003
+2019-11-04 02:31:18,507 - INFO - Total environmental steps in training mode up to now: 3360000
+2019-11-04 02:31:18,507 - INFO - Saving the agent...
+2019-11-04 02:31:23,338 - INFO - Validating for 1000 episodes...
+2019-11-04 02:37:19,299 - INFO - Training of 1000 finished with following result:
+2019-11-04 02:37:19,299 - INFO - Average total reward over 1000 validation episodes after 42000 total training episodes: 0.235
+2019-11-04 02:37:19,300 - INFO - Average scaled reward over 1000 validation episodes after 42000 total training episodes: 0.003
+2019-11-04 02:37:19,300 - INFO - Training for 1000 episodes...
+2019-11-04 02:44:56,270 - INFO - Training of 1000 finished with following result:
+2019-11-04 02:44:56,271 - INFO - Average total reward over 1000 training episodes after 43000 total training episodes: 0.254
+2019-11-04 02:44:56,271 - INFO - Average scaled reward over 1000 training episodes after 43000 total training episodes: 0.003
+2019-11-04 02:44:56,271 - INFO - Total environmental steps in training mode up to now: 3440000
+2019-11-04 02:44:56,271 - INFO - Saving the agent...
+2019-11-04 02:45:00,477 - INFO - Validating for 1000 episodes...
+2019-11-04 02:50:54,995 - INFO - Training of 1000 finished with following result:
+2019-11-04 02:50:54,995 - INFO - Average total reward over 1000 validation episodes after 43000 total training episodes: 0.245
+2019-11-04 02:50:54,995 - INFO - Average scaled reward over 1000 validation episodes after 43000 total training episodes: 0.003
+2019-11-04 02:50:54,995 - INFO - Training for 1000 episodes...
+2019-11-04 02:58:34,770 - INFO - Training of 1000 finished with following result:
+2019-11-04 02:58:34,770 - INFO - Average total reward over 1000 training episodes after 44000 total training episodes: 0.242
+2019-11-04 02:58:34,770 - INFO - Average scaled reward over 1000 training episodes after 44000 total training episodes: 0.003
+2019-11-04 02:58:34,770 - INFO - Total environmental steps in training mode up to now: 3520000
+2019-11-04 02:58:34,770 - INFO - Saving the agent...
+2019-11-04 02:58:42,916 - INFO - Validating for 1000 episodes...
+2019-11-04 03:04:36,857 - INFO - Training of 1000 finished with following result:
+2019-11-04 03:04:36,857 - INFO - Average total reward over 1000 validation episodes after 44000 total training episodes: 0.239
+2019-11-04 03:04:36,857 - INFO - Average scaled reward over 1000 validation episodes after 44000 total training episodes: 0.003
+2019-11-04 03:04:36,857 - INFO - Training for 1000 episodes...
+2019-11-04 03:12:14,764 - INFO - Training of 1000 finished with following result:
+2019-11-04 03:12:14,764 - INFO - Average total reward over 1000 training episodes after 45000 total training episodes: 0.249
+2019-11-04 03:12:14,764 - INFO - Average scaled reward over 1000 training episodes after 45000 total training episodes: 0.003
+2019-11-04 03:12:14,764 - INFO - Total environmental steps in training mode up to now: 3600000
+2019-11-04 03:12:14,765 - INFO - Saving the agent...
+2019-11-04 03:12:23,521 - INFO - Validating for 1000 episodes...
+2019-11-04 03:18:19,599 - INFO - Training of 1000 finished with following result:
+2019-11-04 03:18:19,600 - INFO - Average total reward over 1000 validation episodes after 45000 total training episodes: 0.255
+2019-11-04 03:18:19,600 - INFO - Average scaled reward over 1000 validation episodes after 45000 total training episodes: 0.003
+2019-11-04 03:18:19,600 - INFO - Training for 1000 episodes...
+2019-11-04 03:25:54,906 - INFO - Training of 1000 finished with following result:
+2019-11-04 03:25:54,906 - INFO - Average total reward over 1000 training episodes after 46000 total training episodes: 0.245
+2019-11-04 03:25:54,906 - INFO - Average scaled reward over 1000 training episodes after 46000 total training episodes: 0.003
+2019-11-04 03:25:54,906 - INFO - Total environmental steps in training mode up to now: 3680000
+2019-11-04 03:25:54,906 - INFO - Saving the agent...
+2019-11-04 03:25:59,887 - INFO - Validating for 1000 episodes...
+2019-11-04 03:31:54,010 - INFO - Training of 1000 finished with following result:
+2019-11-04 03:31:54,010 - INFO - Average total reward over 1000 validation episodes after 46000 total training episodes: 0.25
+2019-11-04 03:31:54,010 - INFO - Average scaled reward over 1000 validation episodes after 46000 total training episodes: 0.003
+2019-11-04 03:31:54,010 - INFO - Training for 1000 episodes...
+2019-11-04 03:39:31,856 - INFO - Training of 1000 finished with following result:
+2019-11-04 03:39:31,856 - INFO - Average total reward over 1000 training episodes after 47000 total training episodes: 0.24
+2019-11-04 03:39:31,856 - INFO - Average scaled reward over 1000 training episodes after 47000 total training episodes: 0.003
+2019-11-04 03:39:31,856 - INFO - Total environmental steps in training mode up to now: 3760000
+2019-11-04 03:39:31,856 - INFO - Saving the agent...
+2019-11-04 03:39:35,948 - INFO - Validating for 1000 episodes...
+2019-11-04 03:45:31,637 - INFO - Training of 1000 finished with following result:
+2019-11-04 03:45:31,637 - INFO - Average total reward over 1000 validation episodes after 47000 total training episodes: 0.238
+2019-11-04 03:45:31,638 - INFO - Average scaled reward over 1000 validation episodes after 47000 total training episodes: 0.003
+2019-11-04 03:45:31,638 - INFO - Training for 1000 episodes...
+2019-11-04 03:53:06,548 - INFO - Training of 1000 finished with following result:
+2019-11-04 03:53:06,549 - INFO - Average total reward over 1000 training episodes after 48000 total training episodes: 0.245
+2019-11-04 03:53:06,549 - INFO - Average scaled reward over 1000 training episodes after 48000 total training episodes: 0.003
+2019-11-04 03:53:06,549 - INFO - Total environmental steps in training mode up to now: 3840000
+2019-11-04 03:53:06,549 - INFO - Saving the agent...
+2019-11-04 03:53:09,437 - INFO - Validating for 1000 episodes...
+2019-11-04 03:59:06,043 - INFO - Training of 1000 finished with following result:
+2019-11-04 03:59:06,043 - INFO - Average total reward over 1000 validation episodes after 48000 total training episodes: 0.254
+2019-11-04 03:59:06,043 - INFO - Average scaled reward over 1000 validation episodes after 48000 total training episodes: 0.003
+2019-11-04 03:59:06,043 - INFO - Training for 1000 episodes...
+2019-11-04 04:06:41,810 - INFO - Training of 1000 finished with following result:
+2019-11-04 04:06:41,810 - INFO - Average total reward over 1000 training episodes after 49000 total training episodes: 0.252
+2019-11-04 04:06:41,810 - INFO - Average scaled reward over 1000 training episodes after 49000 total training episodes: 0.003
+2019-11-04 04:06:41,810 - INFO - Total environmental steps in training mode up to now: 3920000
+2019-11-04 04:06:41,810 - INFO - Saving the agent...
+2019-11-04 04:06:45,488 - INFO - Validating for 1000 episodes...
+2019-11-04 04:12:41,736 - INFO - Training of 1000 finished with following result:
+2019-11-04 04:12:41,737 - INFO - Average total reward over 1000 validation episodes after 49000 total training episodes: 0.25
+2019-11-04 04:12:41,737 - INFO - Average scaled reward over 1000 validation episodes after 49000 total training episodes: 0.003
+2019-11-04 04:12:41,738 - INFO - Training for 1000 episodes...
+2019-11-04 04:20:18,653 - INFO - Training of 1000 finished with following result:
+2019-11-04 04:20:18,653 - INFO - Average total reward over 1000 training episodes after 50000 total training episodes: 0.245
+2019-11-04 04:20:18,653 - INFO - Average scaled reward over 1000 training episodes after 50000 total training episodes: 0.003
+2019-11-04 04:20:18,653 - INFO - Total environmental steps in training mode up to now: 4000000
+2019-11-04 04:20:18,653 - INFO - Saving the agent...
+2019-11-04 04:20:24,813 - INFO - Validating for 1000 episodes...
+2019-11-04 04:26:23,520 - INFO - Training of 1000 finished with following result:
+2019-11-04 04:26:23,520 - INFO - Average total reward over 1000 validation episodes after 50000 total training episodes: 0.247
+2019-11-04 04:26:23,521 - INFO - Average scaled reward over 1000 validation episodes after 50000 total training episodes: 0.003
+2019-11-04 04:26:23,521 - INFO - Training for 1000 episodes...
+2019-11-04 04:34:07,807 - INFO - Training of 1000 finished with following result:
+2019-11-04 04:34:07,808 - INFO - Average total reward over 1000 training episodes after 51000 total training episodes: 0.251
+2019-11-04 04:34:07,808 - INFO - Average scaled reward over 1000 training episodes after 51000 total training episodes: 0.003
+2019-11-04 04:34:07,808 - INFO - Total environmental steps in training mode up to now: 4080000
+2019-11-04 04:34:07,808 - INFO - Saving the agent...
+2019-11-04 04:34:09,901 - INFO - Validating for 1000 episodes...
+2019-11-04 04:40:19,380 - INFO - Training of 1000 finished with following result:
+2019-11-04 04:40:19,381 - INFO - Average total reward over 1000 validation episodes after 51000 total training episodes: 0.255
+2019-11-04 04:40:19,381 - INFO - Average scaled reward over 1000 validation episodes after 51000 total training episodes: 0.003
+2019-11-04 04:40:19,381 - INFO - Training for 1000 episodes...
+2019-11-04 04:48:01,274 - INFO - Training of 1000 finished with following result:
+2019-11-04 04:48:01,275 - INFO - Average total reward over 1000 training episodes after 52000 total training episodes: 0.255
+2019-11-04 04:48:01,275 - INFO - Average scaled reward over 1000 training episodes after 52000 total training episodes: 0.003
+2019-11-04 04:48:01,275 - INFO - Total environmental steps in training mode up to now: 4160000
+2019-11-04 04:48:01,275 - INFO - Saving the agent...
+2019-11-04 04:48:03,020 - INFO - Validating for 1000 episodes...
+2019-11-04 04:54:04,682 - INFO - Training of 1000 finished with following result:
+2019-11-04 04:54:04,683 - INFO - Average total reward over 1000 validation episodes after 52000 total training episodes: 0.26
+2019-11-04 04:54:04,683 - INFO - Average scaled reward over 1000 validation episodes after 52000 total training episodes: 0.003
+2019-11-04 04:54:04,683 - INFO - Training for 1000 episodes...
+2019-11-04 05:01:50,117 - INFO - Training of 1000 finished with following result:
+2019-11-04 05:01:50,117 - INFO - Average total reward over 1000 training episodes after 53000 total training episodes: 0.26
+2019-11-04 05:01:50,117 - INFO - Average scaled reward over 1000 training episodes after 53000 total training episodes: 0.003
+2019-11-04 05:01:50,117 - INFO - Total environmental steps in training mode up to now: 4240000
+2019-11-04 05:01:50,117 - INFO - Saving the agent...
+2019-11-04 05:01:51,606 - INFO - Validating for 1000 episodes...
+2019-11-04 05:07:58,184 - INFO - Training of 1000 finished with following result:
+2019-11-04 05:07:58,185 - INFO - Average total reward over 1000 validation episodes after 53000 total training episodes: 0.256
+2019-11-04 05:07:58,185 - INFO - Average scaled reward over 1000 validation episodes after 53000 total training episodes: 0.003
+2019-11-04 05:07:58,185 - INFO - Training for 1000 episodes...
+2019-11-04 05:15:48,615 - INFO - Training of 1000 finished with following result:
+2019-11-04 05:15:48,616 - INFO - Average total reward over 1000 training episodes after 54000 total training episodes: 0.272
+2019-11-04 05:15:48,616 - INFO - Average scaled reward over 1000 training episodes after 54000 total training episodes: 0.003
+2019-11-04 05:15:48,616 - INFO - Total environmental steps in training mode up to now: 4320000
+2019-11-04 05:15:48,616 - INFO - Saving the agent...
+2019-11-04 05:15:50,149 - INFO - Validating for 1000 episodes...
+2019-11-04 05:21:52,874 - INFO - Training of 1000 finished with following result:
+2019-11-04 05:21:52,874 - INFO - Average total reward over 1000 validation episodes after 54000 total training episodes: 0.267
+2019-11-04 05:21:52,875 - INFO - Average scaled reward over 1000 validation episodes after 54000 total training episodes: 0.003
+2019-11-04 05:21:52,875 - INFO - Training for 1000 episodes...
+2019-11-04 05:29:40,410 - INFO - Training of 1000 finished with following result:
+2019-11-04 05:29:40,410 - INFO - Average total reward over 1000 training episodes after 55000 total training episodes: 0.251
+2019-11-04 05:29:40,410 - INFO - Average scaled reward over 1000 training episodes after 55000 total training episodes: 0.003
+2019-11-04 05:29:40,410 - INFO - Total environmental steps in training mode up to now: 4400000
+2019-11-04 05:29:40,410 - INFO - Saving the agent...
+2019-11-04 05:29:41,815 - INFO - Validating for 1000 episodes...
+2019-11-04 05:35:50,084 - INFO - Training of 1000 finished with following result:
+2019-11-04 05:35:50,084 - INFO - Average total reward over 1000 validation episodes after 55000 total training episodes: 0.254
+2019-11-04 05:35:50,084 - INFO - Average scaled reward over 1000 validation episodes after 55000 total training episodes: 0.003
+2019-11-04 05:35:50,084 - INFO - Training for 1000 episodes...
+2019-11-04 05:43:36,278 - INFO - Training of 1000 finished with following result:
+2019-11-04 05:43:36,278 - INFO - Average total reward over 1000 training episodes after 56000 total training episodes: 0.264
+2019-11-04 05:43:36,278 - INFO - Average scaled reward over 1000 training episodes after 56000 total training episodes: 0.003
+2019-11-04 05:43:36,278 - INFO - Total environmental steps in training mode up to now: 4480000
+2019-11-04 05:43:36,278 - INFO - Saving the agent...
+2019-11-04 05:43:37,771 - INFO - Validating for 1000 episodes...
+2019-11-04 05:49:44,005 - INFO - Training of 1000 finished with following result:
+2019-11-04 05:49:44,005 - INFO - Average total reward over 1000 validation episodes after 56000 total training episodes: 0.257
+2019-11-04 05:49:44,005 - INFO - Average scaled reward over 1000 validation episodes after 56000 total training episodes: 0.003
+2019-11-04 05:49:44,006 - INFO - Training for 1000 episodes...
+2019-11-04 05:57:35,915 - INFO - Training of 1000 finished with following result:
+2019-11-04 05:57:35,915 - INFO - Average total reward over 1000 training episodes after 57000 total training episodes: 0.257
+2019-11-04 05:57:35,915 - INFO - Average scaled reward over 1000 training episodes after 57000 total training episodes: 0.003
+2019-11-04 05:57:35,915 - INFO - Total environmental steps in training mode up to now: 4560000
+2019-11-04 05:57:35,916 - INFO - Saving the agent...
+2019-11-04 05:57:37,408 - INFO - Validating for 1000 episodes...
+2019-11-04 06:03:40,895 - INFO - Training of 1000 finished with following result:
+2019-11-04 06:03:40,895 - INFO - Average total reward over 1000 validation episodes after 57000 total training episodes: 0.278
+2019-11-04 06:03:40,895 - INFO - Average scaled reward over 1000 validation episodes after 57000 total training episodes: 0.003
+2019-11-04 06:03:40,895 - INFO - Training for 1000 episodes...
+2019-11-04 06:11:28,846 - INFO - Training of 1000 finished with following result:
+2019-11-04 06:11:28,846 - INFO - Average total reward over 1000 training episodes after 58000 total training episodes: 0.256
+2019-11-04 06:11:28,846 - INFO - Average scaled reward over 1000 training episodes after 58000 total training episodes: 0.003
+2019-11-04 06:11:28,847 - INFO - Total environmental steps in training mode up to now: 4640000
+2019-11-04 06:11:28,847 - INFO - Saving the agent...
+2019-11-04 06:11:30,344 - INFO - Validating for 1000 episodes...
+2019-11-04 06:17:38,509 - INFO - Training of 1000 finished with following result:
+2019-11-04 06:17:38,510 - INFO - Average total reward over 1000 validation episodes after 58000 total training episodes: 0.262
+2019-11-04 06:17:38,510 - INFO - Average scaled reward over 1000 validation episodes after 58000 total training episodes: 0.003
+2019-11-04 06:17:38,510 - INFO - Training for 1000 episodes...
+2019-11-04 06:25:26,860 - INFO - Training of 1000 finished with following result:
+2019-11-04 06:25:26,861 - INFO - Average total reward over 1000 training episodes after 59000 total training episodes: 0.252
+2019-11-04 06:25:26,861 - INFO - Average scaled reward over 1000 training episodes after 59000 total training episodes: 0.003
+2019-11-04 06:25:26,861 - INFO - Total environmental steps in training mode up to now: 4720000
+2019-11-04 06:25:26,861 - INFO - Saving the agent...
+2019-11-04 06:25:28,266 - INFO - Validating for 1000 episodes...
+2019-11-04 06:31:35,311 - INFO - Training of 1000 finished with following result:
+2019-11-04 06:31:35,311 - INFO - Average total reward over 1000 validation episodes after 59000 total training episodes: 0.264
+2019-11-04 06:31:35,311 - INFO - Average scaled reward over 1000 validation episodes after 59000 total training episodes: 0.003
+2019-11-04 06:31:35,312 - INFO - Training for 1000 episodes...
+2019-11-04 06:39:21,761 - INFO - Training of 1000 finished with following result:
+2019-11-04 06:39:21,761 - INFO - Average total reward over 1000 training episodes after 60000 total training episodes: 0.265
+2019-11-04 06:39:21,761 - INFO - Average scaled reward over 1000 training episodes after 60000 total training episodes: 0.003
+2019-11-04 06:39:21,761 - INFO - Total environmental steps in training mode up to now: 4800000
+2019-11-04 06:39:21,761 - INFO - Saving the agent...
+2019-11-04 06:39:23,279 - INFO - Validating for 1000 episodes...
+2019-11-04 06:45:31,693 - INFO - Training of 1000 finished with following result:
+2019-11-04 06:45:31,693 - INFO - Average total reward over 1000 validation episodes after 60000 total training episodes: 0.257
+2019-11-04 06:45:31,693 - INFO - Average scaled reward over 1000 validation episodes after 60000 total training episodes: 0.003
+2019-11-04 06:45:31,694 - INFO - Training for 1000 episodes...
+2019-11-04 06:53:19,729 - INFO - Training of 1000 finished with following result:
+2019-11-04 06:53:19,729 - INFO - Average total reward over 1000 training episodes after 61000 total training episodes: 0.262
+2019-11-04 06:53:19,729 - INFO - Average scaled reward over 1000 training episodes after 61000 total training episodes: 0.003
+2019-11-04 06:53:19,729 - INFO - Total environmental steps in training mode up to now: 4880000
+2019-11-04 06:53:19,729 - INFO - Saving the agent...
+2019-11-04 06:53:21,243 - INFO - Validating for 1000 episodes...
+2019-11-04 06:59:26,270 - INFO - Training of 1000 finished with following result:
+2019-11-04 06:59:26,270 - INFO - Average total reward over 1000 validation episodes after 61000 total training episodes: 0.263
+2019-11-04 06:59:26,270 - INFO - Average scaled reward over 1000 validation episodes after 61000 total training episodes: 0.003
+2019-11-04 06:59:26,270 - INFO - Training for 1000 episodes...
+2019-11-04 07:07:14,375 - INFO - Training of 1000 finished with following result:
+2019-11-04 07:07:14,375 - INFO - Average total reward over 1000 training episodes after 62000 total training episodes: 0.262
+2019-11-04 07:07:14,375 - INFO - Average scaled reward over 1000 training episodes after 62000 total training episodes: 0.003
+2019-11-04 07:07:14,375 - INFO - Total environmental steps in training mode up to now: 4960000
+2019-11-04 07:07:14,375 - INFO - Saving the agent...
+2019-11-04 07:07:15,984 - INFO - Validating for 1000 episodes...
+2019-11-04 07:13:19,654 - INFO - Training of 1000 finished with following result:
+2019-11-04 07:13:19,655 - INFO - Average total reward over 1000 validation episodes after 62000 total training episodes: 0.266
+2019-11-04 07:13:19,655 - INFO - Average scaled reward over 1000 validation episodes after 62000 total training episodes: 0.003
+2019-11-04 07:13:19,655 - INFO - Training for 1000 episodes...
+2019-11-04 07:21:10,429 - INFO - Training of 1000 finished with following result:
+2019-11-04 07:21:10,429 - INFO - Average total reward over 1000 training episodes after 63000 total training episodes: 0.25
+2019-11-04 07:21:10,430 - INFO - Average scaled reward over 1000 training episodes after 63000 total training episodes: 0.003
+2019-11-04 07:21:10,430 - INFO - Total environmental steps in training mode up to now: 5040000
+2019-11-04 07:21:10,430 - INFO - Saving the agent...
+2019-11-04 07:21:11,902 - INFO - Validating for 1000 episodes...
+2019-11-04 07:27:15,931 - INFO - Training of 1000 finished with following result:
+2019-11-04 07:27:15,931 - INFO - Average total reward over 1000 validation episodes after 63000 total training episodes: 0.254
+2019-11-04 07:27:15,931 - INFO - Average scaled reward over 1000 validation episodes after 63000 total training episodes: 0.003
+2019-11-04 07:27:15,931 - INFO - Training for 1000 episodes...
+2019-11-04 07:35:06,344 - INFO - Training of 1000 finished with following result:
+2019-11-04 07:35:06,345 - INFO - Average total reward over 1000 training episodes after 64000 total training episodes: 0.27
+2019-11-04 07:35:06,345 - INFO - Average scaled reward over 1000 training episodes after 64000 total training episodes: 0.003
+2019-11-04 07:35:06,345 - INFO - Total environmental steps in training mode up to now: 5120000
+2019-11-04 07:35:06,345 - INFO - Saving the agent...
+2019-11-04 07:35:07,807 - INFO - Validating for 1000 episodes...
+2019-11-04 07:41:11,483 - INFO - Training of 1000 finished with following result:
+2019-11-04 07:41:11,483 - INFO - Average total reward over 1000 validation episodes after 64000 total training episodes: 0.265
+2019-11-04 07:41:11,483 - INFO - Average scaled reward over 1000 validation episodes after 64000 total training episodes: 0.003
+2019-11-04 07:41:11,483 - INFO - Training for 1000 episodes...
+2019-11-04 07:48:57,234 - INFO - Training of 1000 finished with following result:
+2019-11-04 07:48:57,235 - INFO - Average total reward over 1000 training episodes after 65000 total training episodes: 0.268
+2019-11-04 07:48:57,235 - INFO - Average scaled reward over 1000 training episodes after 65000 total training episodes: 0.003
+2019-11-04 07:48:57,235 - INFO - Total environmental steps in training mode up to now: 5200000
+2019-11-04 07:48:57,235 - INFO - Saving the agent...
+2019-11-04 07:48:58,709 - INFO - Validating for 1000 episodes...
+2019-11-04 07:55:01,770 - INFO - Training of 1000 finished with following result:
+2019-11-04 07:55:01,771 - INFO - Average total reward over 1000 validation episodes after 65000 total training episodes: 0.279
+2019-11-04 07:55:01,771 - INFO - Average scaled reward over 1000 validation episodes after 65000 total training episodes: 0.003
+2019-11-04 07:55:01,771 - INFO - Training for 1000 episodes...
+2019-11-04 08:03:01,332 - INFO - Training of 1000 finished with following result:
+2019-11-04 08:03:01,332 - INFO - Average total reward over 1000 training episodes after 66000 total training episodes: 0.249
+2019-11-04 08:03:01,332 - INFO - Average scaled reward over 1000 training episodes after 66000 total training episodes: 0.003
+2019-11-04 08:03:01,332 - INFO - Total environmental steps in training mode up to now: 5280000
+2019-11-04 08:03:01,332 - INFO - Saving the agent...
+2019-11-04 08:03:02,847 - INFO - Validating for 1000 episodes...
+2019-11-04 08:09:07,537 - INFO - Training of 1000 finished with following result:
+2019-11-04 08:09:07,537 - INFO - Average total reward over 1000 validation episodes after 66000 total training episodes: 0.272
+2019-11-04 08:09:07,537 - INFO - Average scaled reward over 1000 validation episodes after 66000 total training episodes: 0.003
+2019-11-04 08:09:07,537 - INFO - Training for 1000 episodes...
+2019-11-04 08:16:56,714 - INFO - Training of 1000 finished with following result:
+2019-11-04 08:16:56,715 - INFO - Average total reward over 1000 training episodes after 67000 total training episodes: 0.252
+2019-11-04 08:16:56,715 - INFO - Average scaled reward over 1000 training episodes after 67000 total training episodes: 0.003
+2019-11-04 08:16:56,715 - INFO - Total environmental steps in training mode up to now: 5360000
+2019-11-04 08:16:56,715 - INFO - Saving the agent...
+2019-11-04 08:16:58,187 - INFO - Validating for 1000 episodes...
+2019-11-04 08:23:01,425 - INFO - Training of 1000 finished with following result:
+2019-11-04 08:23:01,426 - INFO - Average total reward over 1000 validation episodes after 67000 total training episodes: 0.256
+2019-11-04 08:23:01,426 - INFO - Average scaled reward over 1000 validation episodes after 67000 total training episodes: 0.003
+2019-11-04 08:23:01,426 - INFO - Training for 1000 episodes...
+2019-11-04 08:30:48,979 - INFO - Training of 1000 finished with following result:
+2019-11-04 08:30:48,979 - INFO - Average total reward over 1000 training episodes after 68000 total training episodes: 0.251
+2019-11-04 08:30:48,979 - INFO - Average scaled reward over 1000 training episodes after 68000 total training episodes: 0.003
+2019-11-04 08:30:48,979 - INFO - Total environmental steps in training mode up to now: 5440000
+2019-11-04 08:30:48,979 - INFO - Saving the agent...
+2019-11-04 08:30:50,367 - INFO - Validating for 1000 episodes...
+2019-11-04 08:36:52,789 - INFO - Training of 1000 finished with following result:
+2019-11-04 08:36:52,790 - INFO - Average total reward over 1000 validation episodes after 68000 total training episodes: 0.257
+2019-11-04 08:36:52,790 - INFO - Average scaled reward over 1000 validation episodes after 68000 total training episodes: 0.003
+2019-11-04 08:36:52,790 - INFO - Training for 1000 episodes...
+2019-11-04 08:44:37,312 - INFO - Training of 1000 finished with following result:
+2019-11-04 08:44:37,313 - INFO - Average total reward over 1000 training episodes after 69000 total training episodes: 0.257
+2019-11-04 08:44:37,313 - INFO - Average scaled reward over 1000 training episodes after 69000 total training episodes: 0.003
+2019-11-04 08:44:37,313 - INFO - Total environmental steps in training mode up to now: 5520000
+2019-11-04 08:44:37,313 - INFO - Saving the agent...
+2019-11-04 08:44:38,802 - INFO - Validating for 1000 episodes...
+2019-11-04 08:50:46,190 - INFO - Training of 1000 finished with following result:
+2019-11-04 08:50:46,191 - INFO - Average total reward over 1000 validation episodes after 69000 total training episodes: 0.245
+2019-11-04 08:50:46,191 - INFO - Average scaled reward over 1000 validation episodes after 69000 total training episodes: 0.003
+2019-11-04 08:50:46,191 - INFO - Training for 1000 episodes...
+2019-11-04 08:58:35,372 - INFO - Training of 1000 finished with following result:
+2019-11-04 08:58:35,372 - INFO - Average total reward over 1000 training episodes after 70000 total training episodes: 0.245
+2019-11-04 08:58:35,372 - INFO - Average scaled reward over 1000 training episodes after 70000 total training episodes: 0.003
+2019-11-04 08:58:35,372 - INFO - Total environmental steps in training mode up to now: 5600000
+2019-11-04 08:58:35,372 - INFO - Saving the agent...
+2019-11-04 08:58:36,872 - INFO - Validating for 1000 episodes...
+2019-11-04 09:04:37,722 - INFO - Training of 1000 finished with following result:
+2019-11-04 09:04:37,723 - INFO - Average total reward over 1000 validation episodes after 70000 total training episodes: 0.247
+2019-11-04 09:04:37,723 - INFO - Average scaled reward over 1000 validation episodes after 70000 total training episodes: 0.003
+2019-11-04 09:04:37,723 - INFO - Training for 1000 episodes...
+2019-11-04 09:12:22,254 - INFO - Training of 1000 finished with following result:
+2019-11-04 09:12:22,254 - INFO - Average total reward over 1000 training episodes after 71000 total training episodes: 0.251
+2019-11-04 09:12:22,254 - INFO - Average scaled reward over 1000 training episodes after 71000 total training episodes: 0.003
+2019-11-04 09:12:22,254 - INFO - Total environmental steps in training mode up to now: 5680000
+2019-11-04 09:12:22,254 - INFO - Saving the agent...
+2019-11-04 09:12:23,671 - INFO - Validating for 1000 episodes...
+2019-11-04 09:18:29,939 - INFO - Training of 1000 finished with following result:
+2019-11-04 09:18:29,940 - INFO - Average total reward over 1000 validation episodes after 71000 total training episodes: 0.245
+2019-11-04 09:18:29,940 - INFO - Average scaled reward over 1000 validation episodes after 71000 total training episodes: 0.003
+2019-11-04 09:18:29,940 - INFO - Training for 1000 episodes...
+2019-11-04 09:26:18,633 - INFO - Training of 1000 finished with following result:
+2019-11-04 09:26:18,633 - INFO - Average total reward over 1000 training episodes after 72000 total training episodes: 0.267
+2019-11-04 09:26:18,633 - INFO - Average scaled reward over 1000 training episodes after 72000 total training episodes: 0.003
+2019-11-04 09:26:18,633 - INFO - Total environmental steps in training mode up to now: 5760000
+2019-11-04 09:26:18,633 - INFO - Saving the agent...
+2019-11-04 09:26:20,108 - INFO - Validating for 1000 episodes...
+2019-11-04 09:32:24,484 - INFO - Training of 1000 finished with following result:
+2019-11-04 09:32:24,484 - INFO - Average total reward over 1000 validation episodes after 72000 total training episodes: 0.257
+2019-11-04 09:32:24,484 - INFO - Average scaled reward over 1000 validation episodes after 72000 total training episodes: 0.003
+2019-11-04 09:32:24,484 - INFO - Training for 1000 episodes...
+2019-11-04 09:40:10,996 - INFO - Training of 1000 finished with following result:
+2019-11-04 09:40:10,996 - INFO - Average total reward over 1000 training episodes after 73000 total training episodes: 0.261
+2019-11-04 09:40:10,996 - INFO - Average scaled reward over 1000 training episodes after 73000 total training episodes: 0.003
+2019-11-04 09:40:10,997 - INFO - Total environmental steps in training mode up to now: 5840000
+2019-11-04 09:40:10,997 - INFO - Saving the agent...
+2019-11-04 09:40:12,472 - INFO - Validating for 1000 episodes...
+2019-11-04 09:46:17,241 - INFO - Training of 1000 finished with following result:
+2019-11-04 09:46:17,242 - INFO - Average total reward over 1000 validation episodes after 73000 total training episodes: 0.265
+2019-11-04 09:46:17,242 - INFO - Average scaled reward over 1000 validation episodes after 73000 total training episodes: 0.003
+2019-11-04 09:46:17,242 - INFO - Training for 1000 episodes...
+2019-11-04 09:54:08,342 - INFO - Training of 1000 finished with following result:
+2019-11-04 09:54:08,342 - INFO - Average total reward over 1000 training episodes after 74000 total training episodes: 0.254
+2019-11-04 09:54:08,342 - INFO - Average scaled reward over 1000 training episodes after 74000 total training episodes: 0.003
+2019-11-04 09:54:08,342 - INFO - Total environmental steps in training mode up to now: 5920000
+2019-11-04 09:54:08,342 - INFO - Saving the agent...
+2019-11-04 09:54:09,813 - INFO - Validating for 1000 episodes...
+2019-11-04 10:00:13,664 - INFO - Training of 1000 finished with following result:
+2019-11-04 10:00:13,665 - INFO - Average total reward over 1000 validation episodes after 74000 total training episodes: 0.26
+2019-11-04 10:00:13,665 - INFO - Average scaled reward over 1000 validation episodes after 74000 total training episodes: 0.003
+2019-11-04 10:00:13,665 - INFO - Training for 1000 episodes...
+2019-11-04 10:08:02,821 - INFO - Training of 1000 finished with following result:
+2019-11-04 10:08:02,822 - INFO - Average total reward over 1000 training episodes after 75000 total training episodes: 0.27
+2019-11-04 10:08:02,822 - INFO - Average scaled reward over 1000 training episodes after 75000 total training episodes: 0.003
+2019-11-04 10:08:02,822 - INFO - Total environmental steps in training mode up to now: 6000000
+2019-11-04 10:08:02,822 - INFO - Saving the agent...
+2019-11-04 10:08:04,440 - INFO - Validating for 1000 episodes...
+2019-11-04 10:14:06,310 - INFO - Training of 1000 finished with following result:
+2019-11-04 10:14:06,310 - INFO - Average total reward over 1000 validation episodes after 75000 total training episodes: 0.24
+2019-11-04 10:14:06,311 - INFO - Average scaled reward over 1000 validation episodes after 75000 total training episodes: 0.003
+2019-11-04 10:14:06,311 - INFO - Training for 1000 episodes...
+2019-11-04 10:21:51,225 - INFO - Training of 1000 finished with following result:
+2019-11-04 10:21:51,226 - INFO - Average total reward over 1000 training episodes after 76000 total training episodes: 0.246
+2019-11-04 10:21:51,226 - INFO - Average scaled reward over 1000 training episodes after 76000 total training episodes: 0.003
+2019-11-04 10:21:51,226 - INFO - Total environmental steps in training mode up to now: 6080000
+2019-11-04 10:21:51,226 - INFO - Saving the agent...
+2019-11-04 10:21:52,695 - INFO - Validating for 1000 episodes...
+2019-11-04 10:27:47,172 - INFO - Training of 1000 finished with following result:
+2019-11-04 10:27:47,172 - INFO - Average total reward over 1000 validation episodes after 76000 total training episodes: 0.251
+2019-11-04 10:27:47,173 - INFO - Average scaled reward over 1000 validation episodes after 76000 total training episodes: 0.003
+2019-11-04 10:27:47,173 - INFO - Training for 1000 episodes...
+2019-11-04 10:35:17,964 - INFO - Training of 1000 finished with following result:
+2019-11-04 10:35:17,965 - INFO - Average total reward over 1000 training episodes after 77000 total training episodes: 0.24
+2019-11-04 10:35:17,965 - INFO - Average scaled reward over 1000 training episodes after 77000 total training episodes: 0.003
+2019-11-04 10:35:17,965 - INFO - Total environmental steps in training mode up to now: 6160000
+2019-11-04 10:35:17,965 - INFO - Saving the agent...
+2019-11-04 10:35:19,519 - INFO - Validating for 1000 episodes...
+2019-11-04 10:41:13,290 - INFO - Training of 1000 finished with following result:
+2019-11-04 10:41:13,291 - INFO - Average total reward over 1000 validation episodes after 77000 total training episodes: 0.248
+2019-11-04 10:41:13,291 - INFO - Average scaled reward over 1000 validation episodes after 77000 total training episodes: 0.003
+2019-11-04 10:41:13,291 - INFO - Training for 1000 episodes...
+2019-11-04 10:48:52,353 - INFO - Training of 1000 finished with following result:
+2019-11-04 10:48:52,354 - INFO - Average total reward over 1000 training episodes after 78000 total training episodes: 0.254
+2019-11-04 10:48:52,354 - INFO - Average scaled reward over 1000 training episodes after 78000 total training episodes: 0.003
+2019-11-04 10:48:52,354 - INFO - Total environmental steps in training mode up to now: 6240000
+2019-11-04 10:48:52,354 - INFO - Saving the agent...
+2019-11-04 10:48:54,506 - INFO - Validating for 1000 episodes...
+2019-11-04 10:54:49,386 - INFO - Training of 1000 finished with following result:
+2019-11-04 10:54:49,387 - INFO - Average total reward over 1000 validation episodes after 78000 total training episodes: 0.265
+2019-11-04 10:54:49,387 - INFO - Average scaled reward over 1000 validation episodes after 78000 total training episodes: 0.003
+2019-11-04 10:54:49,387 - INFO - Training for 1000 episodes...
+2019-11-04 11:02:27,508 - INFO - Training of 1000 finished with following result:
+2019-11-04 11:02:27,508 - INFO - Average total reward over 1000 training episodes after 79000 total training episodes: 0.265
+2019-11-04 11:02:27,508 - INFO - Average scaled reward over 1000 training episodes after 79000 total training episodes: 0.003
+2019-11-04 11:02:27,508 - INFO - Total environmental steps in training mode up to now: 6320000
+2019-11-04 11:02:27,508 - INFO - Saving the agent...
+2019-11-04 11:02:29,052 - INFO - Validating for 1000 episodes...
+2019-11-04 11:08:25,617 - INFO - Training of 1000 finished with following result:
+2019-11-04 11:08:25,618 - INFO - Average total reward over 1000 validation episodes after 79000 total training episodes: 0.258
+2019-11-04 11:08:25,618 - INFO - Average scaled reward over 1000 validation episodes after 79000 total training episodes: 0.003
+2019-11-04 11:08:25,618 - INFO - Training for 1000 episodes...
+2019-11-04 11:16:05,564 - INFO - Training of 1000 finished with following result:
+2019-11-04 11:16:05,564 - INFO - Average total reward over 1000 training episodes after 80000 total training episodes: 0.259
+2019-11-04 11:16:05,565 - INFO - Average scaled reward over 1000 training episodes after 80000 total training episodes: 0.003
+2019-11-04 11:16:05,565 - INFO - Total environmental steps in training mode up to now: 6400000
+2019-11-04 11:16:05,565 - INFO - Saving the agent...
+2019-11-04 11:16:07,164 - INFO - Validating for 1000 episodes...
+2019-11-04 11:22:04,760 - INFO - Training of 1000 finished with following result:
+2019-11-04 11:22:04,760 - INFO - Average total reward over 1000 validation episodes after 80000 total training episodes: 0.261
+2019-11-04 11:22:04,761 - INFO - Average scaled reward over 1000 validation episodes after 80000 total training episodes: 0.003
+2019-11-04 11:22:04,761 - INFO - Training for 1000 episodes...
+2019-11-04 11:29:46,081 - INFO - Training of 1000 finished with following result:
+2019-11-04 11:29:46,081 - INFO - Average total reward over 1000 training episodes after 81000 total training episodes: 0.256
+2019-11-04 11:29:46,082 - INFO - Average scaled reward over 1000 training episodes after 81000 total training episodes: 0.003
+2019-11-04 11:29:46,082 - INFO - Total environmental steps in training mode up to now: 6480000
+2019-11-04 11:29:46,082 - INFO - Saving the agent...
+2019-11-04 11:29:48,491 - INFO - Validating for 1000 episodes...
+2019-11-04 11:35:44,453 - INFO - Training of 1000 finished with following result:
+2019-11-04 11:35:44,453 - INFO - Average total reward over 1000 validation episodes after 81000 total training episodes: 0.266
+2019-11-04 11:35:44,454 - INFO - Average scaled reward over 1000 validation episodes after 81000 total training episodes: 0.003
+2019-11-04 11:35:44,454 - INFO - Training for 1000 episodes...
+2019-11-04 11:43:26,377 - INFO - Training of 1000 finished with following result:
+2019-11-04 11:43:26,378 - INFO - Average total reward over 1000 training episodes after 82000 total training episodes: 0.255
+2019-11-04 11:43:26,378 - INFO - Average scaled reward over 1000 training episodes after 82000 total training episodes: 0.003
+2019-11-04 11:43:26,378 - INFO - Total environmental steps in training mode up to now: 6560000
+2019-11-04 11:43:26,378 - INFO - Saving the agent...
+2019-11-04 11:43:28,061 - INFO - Validating for 1000 episodes...
+2019-11-04 11:49:24,691 - INFO - Training of 1000 finished with following result:
+2019-11-04 11:49:24,691 - INFO - Average total reward over 1000 validation episodes after 82000 total training episodes: 0.258
+2019-11-04 11:49:24,691 - INFO - Average scaled reward over 1000 validation episodes after 82000 total training episodes: 0.003
+2019-11-04 11:49:24,691 - INFO - Training for 1000 episodes...
+2019-11-04 11:57:08,357 - INFO - Training of 1000 finished with following result:
+2019-11-04 11:57:08,558 - INFO - Average total reward over 1000 training episodes after 83000 total training episodes: 0.273
+2019-11-04 11:57:08,558 - INFO - Average scaled reward over 1000 training episodes after 83000 total training episodes: 0.003
+2019-11-04 11:57:08,558 - INFO - Total environmental steps in training mode up to now: 6640000
+2019-11-04 11:57:08,558 - INFO - Saving the agent...
+2019-11-04 11:57:10,216 - INFO - Validating for 1000 episodes...
+2019-11-04 12:03:06,992 - INFO - Training of 1000 finished with following result:
+2019-11-04 12:03:06,992 - INFO - Average total reward over 1000 validation episodes after 83000 total training episodes: 0.256
+2019-11-04 12:03:06,992 - INFO - Average scaled reward over 1000 validation episodes after 83000 total training episodes: 0.003
+2019-11-04 12:03:06,992 - INFO - Training for 1000 episodes...
+2019-11-04 12:10:43,839 - INFO - Training of 1000 finished with following result:
+2019-11-04 12:10:43,849 - INFO - Average total reward over 1000 training episodes after 84000 total training episodes: 0.259
+2019-11-04 12:10:43,850 - INFO - Average scaled reward over 1000 training episodes after 84000 total training episodes: 0.003
+2019-11-04 12:10:43,850 - INFO - Total environmental steps in training mode up to now: 6720000
+2019-11-04 12:10:43,850 - INFO - Saving the agent...
+2019-11-04 12:10:45,478 - INFO - Validating for 1000 episodes...
+2019-11-04 12:16:38,620 - INFO - Training of 1000 finished with following result:
+2019-11-04 12:16:38,669 - INFO - Average total reward over 1000 validation episodes after 84000 total training episodes: 0.248
+2019-11-04 12:16:38,669 - INFO - Average scaled reward over 1000 validation episodes after 84000 total training episodes: 0.003
+2019-11-04 12:16:38,669 - INFO - Training for 1000 episodes...
+2019-11-04 12:24:27,613 - INFO - Training of 1000 finished with following result:
+2019-11-04 12:24:27,614 - INFO - Average total reward over 1000 training episodes after 85000 total training episodes: 0.253
+2019-11-04 12:24:27,615 - INFO - Average scaled reward over 1000 training episodes after 85000 total training episodes: 0.003
+2019-11-04 12:24:27,615 - INFO - Total environmental steps in training mode up to now: 6800000
+2019-11-04 12:24:27,615 - INFO - Saving the agent...
+2019-11-04 12:24:29,976 - INFO - Validating for 1000 episodes...
+2019-11-04 12:30:36,835 - INFO - Training of 1000 finished with following result:
+2019-11-04 12:30:36,836 - INFO - Average total reward over 1000 validation episodes after 85000 total training episodes: 0.258
+2019-11-04 12:30:36,836 - INFO - Average scaled reward over 1000 validation episodes after 85000 total training episodes: 0.003
+2019-11-04 12:30:36,836 - INFO - Training for 1000 episodes...
+2019-11-04 12:38:25,813 - INFO - Training of 1000 finished with following result:
+2019-11-04 12:38:25,813 - INFO - Average total reward over 1000 training episodes after 86000 total training episodes: 0.261
+2019-11-04 12:38:25,814 - INFO - Average scaled reward over 1000 training episodes after 86000 total training episodes: 0.003
+2019-11-04 12:38:25,814 - INFO - Total environmental steps in training mode up to now: 6880000
+2019-11-04 12:38:25,814 - INFO - Saving the agent...
+2019-11-04 12:38:27,877 - INFO - Validating for 1000 episodes...
+2019-11-04 12:44:33,339 - INFO - Training of 1000 finished with following result:
+2019-11-04 12:44:33,340 - INFO - Average total reward over 1000 validation episodes after 86000 total training episodes: 0.243
+2019-11-04 12:44:33,340 - INFO - Average scaled reward over 1000 validation episodes after 86000 total training episodes: 0.003
+2019-11-04 12:44:33,340 - INFO - Training for 1000 episodes...
+2019-11-04 12:52:25,017 - INFO - Training of 1000 finished with following result:
+2019-11-04 12:52:25,017 - INFO - Average total reward over 1000 training episodes after 87000 total training episodes: 0.269
+2019-11-04 12:52:25,017 - INFO - Average scaled reward over 1000 training episodes after 87000 total training episodes: 0.003
+2019-11-04 12:52:25,017 - INFO - Total environmental steps in training mode up to now: 6960000
+2019-11-04 12:52:25,018 - INFO - Saving the agent...
+2019-11-04 12:52:27,057 - INFO - Validating for 1000 episodes...
+2019-11-04 12:58:31,744 - INFO - Training of 1000 finished with following result:
+2019-11-04 12:58:31,745 - INFO - Average total reward over 1000 validation episodes after 87000 total training episodes: 0.253
+2019-11-04 12:58:31,745 - INFO - Average scaled reward over 1000 validation episodes after 87000 total training episodes: 0.003
+2019-11-04 12:58:31,745 - INFO - Training for 1000 episodes...
+2019-11-04 13:06:19,863 - INFO - Training of 1000 finished with following result:
+2019-11-04 13:06:19,863 - INFO - Average total reward over 1000 training episodes after 88000 total training episodes: 0.254
+2019-11-04 13:06:19,863 - INFO - Average scaled reward over 1000 training episodes after 88000 total training episodes: 0.003
+2019-11-04 13:06:19,863 - INFO - Total environmental steps in training mode up to now: 7040000
+2019-11-04 13:06:19,863 - INFO - Saving the agent...
+2019-11-04 13:06:21,857 - INFO - Validating for 1000 episodes...
+2019-11-04 13:12:27,391 - INFO - Training of 1000 finished with following result:
+2019-11-04 13:12:27,392 - INFO - Average total reward over 1000 validation episodes after 88000 total training episodes: 0.259
+2019-11-04 13:12:27,392 - INFO - Average scaled reward over 1000 validation episodes after 88000 total training episodes: 0.003
+2019-11-04 13:12:27,392 - INFO - Training for 1000 episodes...
+2019-11-04 13:20:15,969 - INFO - Training of 1000 finished with following result:
+2019-11-04 13:20:15,969 - INFO - Average total reward over 1000 training episodes after 89000 total training episodes: 0.249
+2019-11-04 13:20:15,969 - INFO - Average scaled reward over 1000 training episodes after 89000 total training episodes: 0.003
+2019-11-04 13:20:15,969 - INFO - Total environmental steps in training mode up to now: 7120000
+2019-11-04 13:20:15,969 - INFO - Saving the agent...
+2019-11-04 13:20:17,923 - INFO - Validating for 1000 episodes...
+2019-11-04 13:26:24,759 - INFO - Training of 1000 finished with following result:
+2019-11-04 13:26:24,760 - INFO - Average total reward over 1000 validation episodes after 89000 total training episodes: 0.254
+2019-11-04 13:26:24,760 - INFO - Average scaled reward over 1000 validation episodes after 89000 total training episodes: 0.003
+2019-11-04 13:26:24,760 - INFO - Training for 1000 episodes...
+2019-11-04 13:34:16,751 - INFO - Training of 1000 finished with following result:
+2019-11-04 13:34:16,752 - INFO - Average total reward over 1000 training episodes after 90000 total training episodes: 0.256
+2019-11-04 13:34:16,752 - INFO - Average scaled reward over 1000 training episodes after 90000 total training episodes: 0.003
+2019-11-04 13:34:16,752 - INFO - Total environmental steps in training mode up to now: 7200000
+2019-11-04 13:34:16,752 - INFO - Saving the agent...
+2019-11-04 13:34:18,825 - INFO - Validating for 1000 episodes...
+2019-11-04 13:40:22,985 - INFO - Training of 1000 finished with following result:
+2019-11-04 13:40:22,986 - INFO - Average total reward over 1000 validation episodes after 90000 total training episodes: 0.264
+2019-11-04 13:40:22,986 - INFO - Average scaled reward over 1000 validation episodes after 90000 total training episodes: 0.003
+2019-11-04 13:40:22,986 - INFO - Training for 1000 episodes...
+2019-11-04 13:48:12,556 - INFO - Training of 1000 finished with following result:
+2019-11-04 13:48:12,556 - INFO - Average total reward over 1000 training episodes after 91000 total training episodes: 0.274
+2019-11-04 13:48:12,556 - INFO - Average scaled reward over 1000 training episodes after 91000 total training episodes: 0.003
+2019-11-04 13:48:12,556 - INFO - Total environmental steps in training mode up to now: 7280000
+2019-11-04 13:48:12,556 - INFO - Saving the agent...
+2019-11-04 13:48:14,558 - INFO - Validating for 1000 episodes...
+2019-11-04 13:54:17,262 - INFO - Training of 1000 finished with following result:
+2019-11-04 13:54:17,262 - INFO - Average total reward over 1000 validation episodes after 91000 total training episodes: 0.249
+2019-11-04 13:54:17,262 - INFO - Average scaled reward over 1000 validation episodes after 91000 total training episodes: 0.003
+2019-11-04 13:54:17,262 - INFO - Training for 1000 episodes...
+2019-11-04 14:01:54,519 - INFO - Training of 1000 finished with following result:
+2019-11-04 14:01:54,520 - INFO - Average total reward over 1000 training episodes after 92000 total training episodes: 0.257
+2019-11-04 14:01:54,520 - INFO - Average scaled reward over 1000 training episodes after 92000 total training episodes: 0.003
+2019-11-04 14:01:54,520 - INFO - Total environmental steps in training mode up to now: 7360000
+2019-11-04 14:01:54,520 - INFO - Saving the agent...
+2019-11-04 14:01:58,648 - INFO - Validating for 1000 episodes...
+2019-11-04 14:07:52,766 - INFO - Training of 1000 finished with following result:
+2019-11-04 14:07:52,767 - INFO - Average total reward over 1000 validation episodes after 92000 total training episodes: 0.241
+2019-11-04 14:07:52,767 - INFO - Average scaled reward over 1000 validation episodes after 92000 total training episodes: 0.003
+2019-11-04 14:07:52,767 - INFO - Training for 1000 episodes...
+2019-11-04 14:15:28,668 - INFO - Training of 1000 finished with following result:
+2019-11-04 14:15:28,668 - INFO - Average total reward over 1000 training episodes after 93000 total training episodes: 0.253
+2019-11-04 14:15:28,668 - INFO - Average scaled reward over 1000 training episodes after 93000 total training episodes: 0.003
+2019-11-04 14:15:28,668 - INFO - Total environmental steps in training mode up to now: 7440000
+2019-11-04 14:15:28,668 - INFO - Saving the agent...
+2019-11-04 14:15:31,166 - INFO - Validating for 1000 episodes...
+2019-11-04 14:21:23,835 - INFO - Training of 1000 finished with following result:
+2019-11-04 14:21:23,835 - INFO - Average total reward over 1000 validation episodes after 93000 total training episodes: 0.256
+2019-11-04 14:21:23,836 - INFO - Average scaled reward over 1000 validation episodes after 93000 total training episodes: 0.003
+2019-11-04 14:21:23,836 - INFO - Training for 1000 episodes...
+2019-11-04 14:29:02,776 - INFO - Training of 1000 finished with following result:
+2019-11-04 14:29:02,776 - INFO - Average total reward over 1000 training episodes after 94000 total training episodes: 0.249
+2019-11-04 14:29:02,776 - INFO - Average scaled reward over 1000 training episodes after 94000 total training episodes: 0.003
+2019-11-04 14:29:02,776 - INFO - Total environmental steps in training mode up to now: 7520000
+2019-11-04 14:29:02,776 - INFO - Saving the agent...
+2019-11-04 14:29:04,781 - INFO - Validating for 1000 episodes...
+2019-11-04 14:34:59,669 - INFO - Training of 1000 finished with following result:
+2019-11-04 14:34:59,670 - INFO - Average total reward over 1000 validation episodes after 94000 total training episodes: 0.251
+2019-11-04 14:34:59,670 - INFO - Average scaled reward over 1000 validation episodes after 94000 total training episodes: 0.003
+2019-11-04 14:34:59,670 - INFO - Training for 1000 episodes...
+2019-11-04 14:42:40,351 - INFO - Training of 1000 finished with following result:
+2019-11-04 14:42:40,351 - INFO - Average total reward over 1000 training episodes after 95000 total training episodes: 0.252
+2019-11-04 14:42:40,351 - INFO - Average scaled reward over 1000 training episodes after 95000 total training episodes: 0.003
+2019-11-04 14:42:40,351 - INFO - Total environmental steps in training mode up to now: 7600000
+2019-11-04 14:42:40,351 - INFO - Saving the agent...
+2019-11-04 14:42:45,497 - INFO - Validating for 1000 episodes...
+2019-11-04 14:48:39,674 - INFO - Training of 1000 finished with following result:
+2019-11-04 14:48:39,675 - INFO - Average total reward over 1000 validation episodes after 95000 total training episodes: 0.255
+2019-11-04 14:48:39,675 - INFO - Average scaled reward over 1000 validation episodes after 95000 total training episodes: 0.003
+2019-11-04 14:48:39,675 - INFO - Training for 1000 episodes...
+2019-11-04 14:56:16,530 - INFO - Training of 1000 finished with following result:
+2019-11-04 14:56:16,530 - INFO - Average total reward over 1000 training episodes after 96000 total training episodes: 0.268
+2019-11-04 14:56:16,531 - INFO - Average scaled reward over 1000 training episodes after 96000 total training episodes: 0.003
+2019-11-04 14:56:16,531 - INFO - Total environmental steps in training mode up to now: 7680000
+2019-11-04 14:56:16,531 - INFO - Saving the agent...
+2019-11-04 14:56:18,551 - INFO - Validating for 1000 episodes...
+2019-11-04 15:02:11,903 - INFO - Training of 1000 finished with following result:
+2019-11-04 15:02:11,903 - INFO - Average total reward over 1000 validation episodes after 96000 total training episodes: 0.253
+2019-11-04 15:02:11,903 - INFO - Average scaled reward over 1000 validation episodes after 96000 total training episodes: 0.003
+2019-11-04 15:02:11,903 - INFO - Training for 1000 episodes...
+2019-11-04 15:09:45,192 - INFO - Training of 1000 finished with following result:
+2019-11-04 15:09:45,192 - INFO - Average total reward over 1000 training episodes after 97000 total training episodes: 0.254
+2019-11-04 15:09:45,192 - INFO - Average scaled reward over 1000 training episodes after 97000 total training episodes: 0.003
+2019-11-04 15:09:45,192 - INFO - Total environmental steps in training mode up to now: 7760000
+2019-11-04 15:09:45,192 - INFO - Saving the agent...
+2019-11-04 15:09:46,845 - INFO - Validating for 1000 episodes...
+2019-11-04 15:15:39,621 - INFO - Training of 1000 finished with following result:
+2019-11-04 15:15:39,622 - INFO - Average total reward over 1000 validation episodes after 97000 total training episodes: 0.264
+2019-11-04 15:15:39,622 - INFO - Average scaled reward over 1000 validation episodes after 97000 total training episodes: 0.003
+2019-11-04 15:15:39,622 - INFO - Training for 1000 episodes...
+2019-11-04 15:23:08,808 - INFO - Training of 1000 finished with following result:
+2019-11-04 15:23:08,808 - INFO - Average total reward over 1000 training episodes after 98000 total training episodes: 0.255
+2019-11-04 15:23:08,809 - INFO - Average scaled reward over 1000 training episodes after 98000 total training episodes: 0.003
+2019-11-04 15:23:08,809 - INFO - Total environmental steps in training mode up to now: 7840000
+2019-11-04 15:23:08,809 - INFO - Saving the agent...
+2019-11-04 15:23:11,232 - INFO - Validating for 1000 episodes...
+2019-11-04 15:29:04,967 - INFO - Training of 1000 finished with following result:
+2019-11-04 15:29:04,968 - INFO - Average total reward over 1000 validation episodes after 98000 total training episodes: 0.246
+2019-11-04 15:29:04,968 - INFO - Average scaled reward over 1000 validation episodes after 98000 total training episodes: 0.003
+2019-11-04 15:29:04,968 - INFO - Training for 1000 episodes...
+2019-11-04 15:36:39,060 - INFO - Training of 1000 finished with following result:
+2019-11-04 15:36:39,060 - INFO - Average total reward over 1000 training episodes after 99000 total training episodes: 0.261
+2019-11-04 15:36:39,061 - INFO - Average scaled reward over 1000 training episodes after 99000 total training episodes: 0.003
+2019-11-04 15:36:39,061 - INFO - Total environmental steps in training mode up to now: 7920000
+2019-11-04 15:36:39,061 - INFO - Saving the agent...
+2019-11-04 15:36:40,803 - INFO - Validating for 1000 episodes...
+2019-11-04 15:42:29,927 - INFO - Training of 1000 finished with following result:
+2019-11-04 15:42:29,928 - INFO - Average total reward over 1000 validation episodes after 99000 total training episodes: 0.252
+2019-11-04 15:42:29,928 - INFO - Average scaled reward over 1000 validation episodes after 99000 total training episodes: 0.003
+2019-11-04 15:42:29,928 - INFO - Training for 1000 episodes...
+2019-11-04 15:49:59,770 - INFO - Training of 1000 finished with following result:
+2019-11-04 15:49:59,771 - INFO - Average total reward over 1000 training episodes after 100000 total training episodes: 0.259
+2019-11-04 15:49:59,771 - INFO - Average scaled reward over 1000 training episodes after 100000 total training episodes: 0.003
+2019-11-04 15:49:59,771 - INFO - Total environmental steps in training mode up to now: 8000000
+2019-11-04 15:49:59,771 - INFO - Saving the agent...
+2019-11-04 15:50:02,127 - INFO - Validating for 1000 episodes...
+2019-11-04 15:55:54,410 - INFO - Training of 1000 finished with following result:
+2019-11-04 15:55:54,410 - INFO - Average total reward over 1000 validation episodes after 100000 total training episodes: 0.248
+2019-11-04 15:55:54,410 - INFO - Average scaled reward over 1000 validation episodes after 100000 total training episodes: 0.003
+2019-11-04 15:55:54,411 - INFO - End of training
+2019-11-04 15:55:54,411 - INFO - Cycle 1 - Testing for 100 episodes...
+2019-11-04 15:56:29,743 - INFO - Testing of 100 finished with following result:
+2019-11-04 15:56:29,743 - INFO - Average total reward over 100 test episodes: 0.228
+2019-11-04 15:56:29,743 - INFO - Average scaled reward over 100 test episodes: 0.003
+2019-11-04 15:56:29,743 - INFO - Cycle 2 - Testing for 100 episodes...
+2019-11-04 15:57:05,191 - INFO - Testing of 100 finished with following result:
+2019-11-04 15:57:05,191 - INFO - Average total reward over 100 test episodes: 0.292
+2019-11-04 15:57:05,191 - INFO - Average scaled reward over 100 test episodes: 0.004
+2019-11-04 15:57:05,192 - INFO - Cycle 3 - Testing for 100 episodes...
+2019-11-04 15:57:40,223 - INFO - Testing of 100 finished with following result:
+2019-11-04 15:57:40,223 - INFO - Average total reward over 100 test episodes: 0.23
+2019-11-04 15:57:40,223 - INFO - Average scaled reward over 100 test episodes: 0.003
+2019-11-04 15:57:40,224 - INFO - Cycle 4 - Testing for 100 episodes...
+2019-11-04 15:58:15,575 - INFO - Testing of 100 finished with following result:
+2019-11-04 15:58:15,575 - INFO - Average total reward over 100 test episodes: 0.255
+2019-11-04 15:58:15,575 - INFO - Average scaled reward over 100 test episodes: 0.003
+2019-11-04 15:58:15,575 - INFO - Cycle 5 - Testing for 100 episodes...
+2019-11-04 15:58:50,860 - INFO - Testing of 100 finished with following result:
+2019-11-04 15:58:50,860 - INFO - Average total reward over 100 test episodes: 0.249
+2019-11-04 15:58:50,860 - INFO - Average scaled reward over 100 test episodes: 0.003
+2019-11-04 15:58:50,860 - INFO - Cycle 6 - Testing for 100 episodes...
+2019-11-04 15:59:25,889 - INFO - Testing of 100 finished with following result:
+2019-11-04 15:59:25,890 - INFO - Average total reward over 100 test episodes: 0.246
+2019-11-04 15:59:25,890 - INFO - Average scaled reward over 100 test episodes: 0.003
+2019-11-04 15:59:25,890 - INFO - Cycle 7 - Testing for 100 episodes...
+2019-11-04 16:00:01,839 - INFO - Testing of 100 finished with following result:
+2019-11-04 16:00:01,839 - INFO - Average total reward over 100 test episodes: 0.255
+2019-11-04 16:00:01,839 - INFO - Average scaled reward over 100 test episodes: 0.003
+2019-11-04 16:00:01,839 - INFO - Cycle 8 - Testing for 100 episodes...
+2019-11-04 16:00:36,750 - INFO - Testing of 100 finished with following result:
+2019-11-04 16:00:36,751 - INFO - Average total reward over 100 test episodes: 0.301
+2019-11-04 16:00:36,751 - INFO - Average scaled reward over 100 test episodes: 0.004
+2019-11-04 16:00:36,751 - INFO - Cycle 9 - Testing for 100 episodes...
+2019-11-04 16:01:11,838 - INFO - Testing of 100 finished with following result:
+2019-11-04 16:01:11,838 - INFO - Average total reward over 100 test episodes: 0.261
+2019-11-04 16:01:11,838 - INFO - Average scaled reward over 100 test episodes: 0.003
+2019-11-04 16:01:11,838 - INFO - Cycle 10 - Testing for 100 episodes...
+2019-11-04 16:01:47,762 - INFO - Testing of 100 finished with following result:
+2019-11-04 16:01:47,762 - INFO - Average total reward over 100 test episodes: 0.25
+2019-11-04 16:01:47,763 - INFO - Average scaled reward over 100 test episodes: 0.003
+2019-11-04 16:01:47,763 - INFO - End of test
+2019-11-04 16:01:47,763 - INFO - Average test total reward is 0.257 with 100000 training episodes
+2019-11-04 16:01:47,764 - INFO - Average test scaled reward is 0.003 with 100000 training episodes
+2019-11-04 16:01:47,764 - INFO - Max test total reward over 100 and 10 cycles is: 0.301
+2019-11-04 16:01:47,764 - INFO - Max test scaled reward over 100 and 10 cycles is: 0.004
+2019-11-04 16:01:47,764 - INFO - Saving plots...
+2019-11-04 16:01:55,351 - INFO - Plots saved successfully
+2019-11-04 16:01:55,351 - INFO - The experiment terminated successfully

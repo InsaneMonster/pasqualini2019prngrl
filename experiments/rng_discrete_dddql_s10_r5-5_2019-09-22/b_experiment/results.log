@@ -1,0 +1,36 @@
+b_experiment:
+Dueling Double DQN with Prioritized Experience Replay (100000 buffer capacity)
+Six dense layer with 2048 neurons each using xavier initialization
+Learning rate: 0.000001
+Discount factor: 0.60
+Weight copy step interval: 1000
+Batch size: 150
+Boltzmann exploration policy with temperature decay: 0.00002 per episode
+Success threshold: 0.25 scaled reward on average over last 20 steps among all the validation volleys episodes
+Max allowed steps for episode: 30
+Acceptance value: none
+
+
+Results:
+
+Success  Average total reward  Max total reward  Average scaled reward  Max scaled reward  Trained episodes
+    YES                  4.51             4.897                   0.15              0.163             75000
+
+
+
+Maximum average total reward over all 1000 test episodes: 4.510 at experiment number 0
+Maximum max total score over 100 test episodes: 4.897 at experiment number 0
+Maximum average scaled reward over all 1000 test episodes: 0.150 at experiment number 0
+Maximum max scaled score over 100 test episodes: 0.163 at experiment number 0
+Minimum training episodes for validation: 75000 at experiment number 0
+Average of average total reward over all experiments 4.510
+Average of max total reward over all experiments: 4.897
+Average of average scaled reward over all experiments 0.150
+Average of max scaled reward over all experiments: 0.163
+Average of training episodes over all experiments: 75000.000
+Success percentage over all experiments: 100.00
+Standard deviation of average total reward over all experiments: 0.000, which is a 0.00% of the average
+Standard deviation of max total reward over all experiments 0.000, which is a 0.00% of the average
+Standard deviation of average scaled reward over all experiments: 0.000, which is a 0.00% of the average
+Standard deviation of max scaled reward over all experiments 0.000, which is a 0.00% of the average
+Standard deviation of training episodes over all experiments: 0.000, which is a 0.00% of the average

@@ -1,0 +1,56 @@
+experiment:
+Data:
+
+Proximal Policy Optimization with GAE buffer and early stopping
+Three dense layer with 4096 neurons each using xavier initialization
+Learning rate policy: 0.0003
+Learning rate advantage: 0.001
+Discount factor: 0.99
+Value steps per update: 80
+Policy steps per update: 80
+Lambda parameter: 0.97
+Clip ratio: 0.2
+Target KL divergence: 0.01
+Updates per training volley: 10
+Success threshold: 0.9 average total reward on the validation set episodes
+Episodic: yes
+Episode length: 100
+Max allowed steps for episode: 100
+Seed states range [0, 0]
+Acceptance value: none
+Threshold value: none
+
+
+Results:
+
+                     Success  Average total reward  Max total reward  Average scaled reward  Max scaled reward  Trained episodes
+Experiment iteration                                                                                                            
+0                        YES                 0.240             0.268                  0.003              0.003            100000
+1                        YES                 0.253             0.263                  0.003              0.003            100000
+2                        YES                 0.229             0.250                  0.003              0.003            100000
+3                        YES                 0.265             0.292                  0.003              0.004            100000
+4                        YES                 0.323             0.338                  0.004              0.004            100000
+5                        YES                 0.341             0.368                  0.004              0.005            100000
+6                        YES                 0.224             0.244                  0.003              0.003            100000
+7                        YES                 0.265             0.286                  0.003              0.004            100000
+8                        YES                 0.255             0.274                  0.003              0.003            100000
+9                        YES                 0.342             0.358                  0.004              0.004            100000
+
+
+
+Maximum average total reward over all 1000 test episodes: 0.342 at experiment number 9
+Maximum max total score over 100 test episodes: 0.368 at experiment number 5
+Maximum average scaled reward over all 1000 test episodes: 0.004 at experiment number 4
+Maximum max scaled score over 100 test episodes: 0.005 at experiment number 5
+Minimum training episodes for validation: 100000 at experiment number 0
+Average of average total reward over all experiments 0.274
+Average of max total reward over all experiments: 0.294
+Average of average scaled reward over all experiments 0.003
+Average of max scaled reward over all experiments: 0.004
+Average of training episodes over all experiments: 100000.000
+Success percentage over all experiments: 100.00
+Standard deviation of average total reward over all experiments: 0.043, which is a 15.57% of the average
+Standard deviation of max total reward over all experiments 0.042, which is a 14.45% of the average
+Standard deviation of average scaled reward over all experiments: 0.000, which is a 13.89% of the average
+Standard deviation of max scaled reward over all experiments 0.001, which is a 18.43% of the average
+Standard deviation of training episodes over all experiments: 0.000, which is a 0.00% of the average
