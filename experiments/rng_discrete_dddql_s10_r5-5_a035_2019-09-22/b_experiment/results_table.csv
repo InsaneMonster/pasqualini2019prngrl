@@ -1,0 +1,2 @@
+Experiment iteration,Success,Average total reward,Max total reward,Average scaled reward,Max scaled reward,Trained episodes
+-1,YES,2.296,2.485,0.131,0.145,75000
