@@ -21,21 +21,7 @@ The algorithm used are:
 
 **License**
 
-*BSD 3-Clause License*
-
-For additional information check the provided license file.
-
-**Framework used**
-
-- To run the NIST test battery `NistRng <https://github.com/InsaneMonster/NistRng>`_ (`nistrng package <https://pypi.org/project/nistrng/>`_) python implementation framework is used.
-- To execute reinforcement learning the framework `USienaRL <https://github.com/InsaneMonster/USienaRL>`_ (`usienarl package <https://pypi.org/project/usienarl/>`_) is used.
-
-**Compatible with Usienarl v0.5.0**
-
-**Backend**
-
-- *Python 3.6*
-- *Tensorflow 1.10*
+The same of the article.
 
 **Framework used**
 
