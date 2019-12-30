@@ -12,7 +12,7 @@ This navigation task is defined by an N-dimensional environment in which said ag
 Starting from a seed state the agent learns how to "move" in the N-dimensional environment in order to reach state with high rewards.
 The reward is given by the result of the `NIST test battery <https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-22r1a.pdf>`_ on the sequence at each time step.
 
-Additional information are given in the related arXiv article.
+Additional information are given in the related `arXiv article <https://arxiv.org/abs/1912.11531?context=cs.AI>`_.
 
 The algorithm used are:
     - Dueling Double DQN (DDDQN) with Prioritized Experience Replay and Gradient-Clipping by using Huber loss
