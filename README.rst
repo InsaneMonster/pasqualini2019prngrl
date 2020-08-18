@@ -14,6 +14,8 @@ The reward is given by the result of the `NIST test battery <https://nvlpubs.nis
 
 Additional information are given in the related `arXiv article <https://arxiv.org/abs/1912.11531?context=cs.AI>`_.
 
+Link to the `published article <https://www.sciencedirect.com/science/article/pii/S1877050920304944?via%3Dihub>`_.
+
 The algorithm used are:
     - Dueling Double DQN (DDDQN) with Prioritized Experience Replay and Gradient-Clipping by using Huber loss
     - Vanilla Policy Gradient (VPG) with rewards-to-go and Generalized Advantage Estimation (GAE-Lambda) buffer
