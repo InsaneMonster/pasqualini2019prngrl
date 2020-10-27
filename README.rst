@@ -10,13 +10,13 @@ A RNG is an algorithm generating pseudo-random numbers and in this research proj
 The network is trained to "randomly" generate a novel algorithm by Reinforcement Learning, using a deep agent to solve a navigation problem.
 This navigation task is defined by an N-dimensional environment in which said agent can "move".
 Starting from a seed state the agent learns how to "move" in the N-dimensional environment in order to reach state with high rewards.
-The reward is given by the result of the `NIST test battery <https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-22r1a.pdf>`_ on the sequence at each time step.
+The reward is given by the result of the `NIST test battery <https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-22r1a.pdf>`_ on the sequence at each time step or only at the last time step.
 
 Additional information are given in the related `arXiv article <https://arxiv.org/abs/1912.11531?context=cs.AI>`_.
 
 Link to the `published article <https://www.sciencedirect.com/science/article/pii/S1877050920304944?via%3Dihub>`_.
 
-The algorithm used are:
+The algorithms used are:
     - Dueling Double DQN (DDDQN) with Prioritized Experience Replay and Gradient-Clipping by using Huber loss
     - Vanilla Policy Gradient (VPG) with rewards-to-go and Generalized Advantage Estimation (GAE-Lambda) buffer
     - Proximal Policy Optimization (PPO) with rewards-to-go and Generalized Advantage Estimation (GAE-Lambda) buffer
